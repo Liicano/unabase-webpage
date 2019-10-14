@@ -24,22 +24,37 @@
 
       <div class="md-layout-item md-size-80" style="z-index:100;">
         <md-list>
-          <md-list-item href="#somos">
-            <span style="padding-left: 20px;" class="md-body-1">SOMOS</span>
+          <md-list-item v-scroll-to="{ element: '#somos', duration: 5000 }">
+            <span style="padding-left: 20px; cursor:pointer;" class="md-body-1">SOMOS</span>
           </md-list-item>
-          <md-list-item href="#mira_el_video" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">MIRA EL VIDEO</span>
+          <md-list-item
+            v-scroll-to="{ element: '#mira_el_video', duration: 5000 }"
+            style="padding-top:35%;cursor:pointer;"
+          >
+            <span style="padding-left: 20px;cursor:pointer;" class="md-body-1">MIRA EL VIDEO</span>
           </md-list-item>
-          <md-list-item href="#smart_budget" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">SMARTBUDGET</span>
+          <md-list-item
+            v-scroll-to="{ element: '#smart_budget', duration: 3000 }"
+            style="padding-top:35%;cursor:pointer;"
+          >
+            <span style="padding-left: 20px;cursor:pointer;" class="md-body-1">SMARTBUDGET</span>
           </md-list-item>
-          <md-list-item href="#caracteristicas" style="padding-top:35%;">
+          <md-list-item
+            v-scroll-to="{ element: '#caracteristicas', duration: 3000 }"
+            style="padding-top:35%;cursor:pointer;"
+          >
             <span style="padding-left: 20px;" class="md-body-1">CARACTERISTICAS</span>
           </md-list-item>
-          <md-list-item href="#clientes" style="padding-top:35%;">
+          <md-list-item
+            v-scroll-to="{ element: '#clientes', duration: 3000 }"
+            style="padding-top:35%;cursor:pointer;"
+          >
             <span style="padding-left: 20px;" class="md-body-1">CLIENTES</span>
           </md-list-item>
-          <md-list-item href="#contacto" style="padding-top:35%;">
+          <md-list-item
+            v-scroll-to="{ element: '#contacto', duration: 3000 }"
+            style="padding-top:35%;cursor:pointer;"
+          >
             <span style="padding-left: 20px;" class="md-body-1">CONTACTO</span>
           </md-list-item>
         </md-list>

@@ -1,5 +1,5 @@
 <template>
-  <div style="margin: 0 !important;">
+  <div style="margin: 0 !important;" id="divContainer">
     <div id="somos" class="somos" style="margin: 0 !important;">somos</div>
     <div id="mira_el_video" class="mira_el_video">mira_el_video</div>
     <div id="smart_budget" class="smart_budget">smart_budget</div>
