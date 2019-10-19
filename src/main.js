@@ -2,6 +2,22 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import DashboardPlugin from "./material-dashboard";
 
+import vueScrollTo from 'vue-scrollto';
+
+Vue.use(vueScrollTo, {
+  container: "body",
+  duration: 2000,
+  easing: "ease",
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+});
+
 // Plugins
 import App from "./App.vue";
 import Chartist from "chartist";

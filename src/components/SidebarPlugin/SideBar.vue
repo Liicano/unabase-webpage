@@ -18,29 +18,32 @@
     <div class="md-layout" style="margin-top: 40%;">
       <div class="md-layout-item md-size-20" style="z-index: 1000;">
         <div class="scrollbar" id="style-1">
-          <div class="force-overflow"></div>
+          <div id="scrollDiv" class="force-overflow">
+            <div id="somos_2" style="height: 100vh !important;"></div>
+            <div id="mira_el_video_2" style="height: 100vh !important;"></div>
+          </div>
         </div>
       </div>
 
       <div class="md-layout-item md-size-80" style="z-index:100;">
         <md-list>
-          <md-list-item href="#somos">
-            <span style="padding-left: 20px;" class="md-body-1">SOMOS</span>
+          <md-list-item style="cursor:pointer;"   v-scroll-to="'#somos'" @click="scrollToPoint(150)">
+            <a style="padding-left: 20px; z-index:100" href="#somos_2" class="md-body-1">SOMOS</a>
           </md-list-item>
-          <md-list-item href="#mira_el_video" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">MIRA EL VIDEO</span>
+          <md-list-item  v-scroll-to="'#mira_el_video'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(1750)">
+            <a href='#mira_el_video_2' style="padding-left: 20px; z-index:100" class="md-body-1">MIRA EL VIDEO</a>
           </md-list-item>
-          <md-list-item href="#smart_budget" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">SMARTBUDGET</span>
+          <md-list-item v-scroll-to="'#smart_budget'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(3300)">
+            <a style="padding-left: 20px;" class="md-body-1">SMARTBUDGET</a>
           </md-list-item>
-          <md-list-item href="#caracteristicas" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">CARACTERISTICAS</span>
+          <md-list-item v-scroll-to="'#caracteristicas'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(4850)">
+            <a style="padding-left: 20px;" class="md-body-1">CARACTERISTICAS</a>
           </md-list-item>
-          <md-list-item href="#clientes" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">CLIENTES</span>
+          <md-list-item v-scroll-to="'#clientes'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(6450)">
+            <a style="padding-left: 20px;" class="md-body-1">CLIENTES</a>
           </md-list-item>
-          <md-list-item href="#contacto" style="padding-top:35%;">
-            <span style="padding-left: 20px;" class="md-body-1">CONTACTO</span>
+          <md-list-item v-scroll-to="'#contacto'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(8000)">
+            <a style="padding-left: 20px;" class="md-body-1">CONTACTO</a>
           </md-list-item>
         </md-list>
       </div>
@@ -80,6 +83,8 @@
   </div>
 </template>
 <script>
+import welcome from '../../pages/landing_page/welcome'
+import $ from 'jquery'
 export default {
   name: "sidebar",
   props: {
@@ -142,7 +147,12 @@ export default {
       if (this.$sidebar) {
         this.$sidebar.toggleMinimize();
       }
-    }
+    },
+
+  scrollToPoint(n){
+    console.log('scroll')
+    $("#style-1").scrollTop(n);
+  }
   },
   computed: {
     sidebarStyle() {
@@ -150,6 +160,9 @@ export default {
         // backgroundImage: `url(${this.backgroundImage})`
       };
     }
+  },
+  components:{
+    welcome
   },
   beforeDestroy() {
     if (this.$sidebar.showSidebar) {
@@ -192,10 +205,40 @@ export default {
 
 #style-1::-webkit-scrollbar-thumb {
   border-radius: 10px;
+  padding-top: 300px !important;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #34cc02;
 }
+
+
+/* MAIN SCROLLBAR */
+
+
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #f5f5f5;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  padding-top: 300px !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #34cc02;
+} */
+
+
+
+
 span {
   font-family: Helvetica;
 }
+
+
 </style>
