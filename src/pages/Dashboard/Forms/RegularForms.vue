@@ -36,11 +36,9 @@
         </md-card-header>
 
         <md-card-content>
-          <form class="form-horizontal" action="" method="post">
+          <form class="form-horizontal" action method="post">
             <div class="md-layout">
-              <label class="md-layout-item md-size-25 md-form-label">
-                Email Adress
-              </label>
+              <label class="md-layout-item md-size-25 md-form-label">Email Adress</label>
               <div class="md-layout-item">
                 <md-field>
                   <md-input v-model="emailadress1" type="email"></md-input>
@@ -49,9 +47,7 @@
             </div>
 
             <div class="md-layout">
-              <label class="md-layout-item md-size-25 md-form-label">
-                Password
-              </label>
+              <label class="md-layout-item md-size-25 md-form-label">Password</label>
               <div class="md-layout-item">
                 <md-field>
                   <md-input v-model="password1" type="password"></md-input>
@@ -60,7 +56,7 @@
             </div>
 
             <div class="md-layout">
-              <label class="md-layout-item md-size-25 md-form-label"> </label>
+              <label class="md-layout-item md-size-25 md-form-label"></label>
               <div class="md-layout-item">
                 <md-checkbox v-model="boolean1">Remember Me</md-checkbox>
               </div>
@@ -84,23 +80,17 @@
 
         <md-card-content>
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              With Help
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">With Help</label>
             <div class="md-layout-item">
               <md-field>
                 <md-input v-model="helper" type="text"></md-input>
-                <span class="md-helper-text"
-                  >A block of help text that breaks onto a new line.</span
-                >
+                <span class="md-helper-text">A block of help text that breaks onto a new line.</span>
               </md-field>
             </div>
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Password
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Password</label>
             <div class="md-layout-item">
               <md-field>
                 <md-input v-model="password2" type="password"></md-input>
@@ -109,24 +99,17 @@
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Placeholder
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Placeholder</label>
             <div class="md-layout-item">
               <md-field>
                 <label>With label</label>
-                <md-input
-                  v-model="placeholder"
-                  placeholder="placeholder"
-                ></md-input>
+                <md-input v-model="placeholder" placeholder="placeholder"></md-input>
               </md-field>
             </div>
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Disabled
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Disabled</label>
             <div class="md-layout-item">
               <md-field>
                 <label>Disabled input here..</label>
@@ -136,18 +119,14 @@
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Static Control
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Static Control</label>
             <div class="md-layout-item">
               <p class="form-control-static">hello@creative-tim.com</p>
             </div>
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Checkboxes and Radios
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Checkboxes and Radios</label>
             <div class="md-layout-item">
               <md-checkbox v-model="checkbox1">First Checkbox</md-checkbox>
               <md-checkbox v-model="checkbox2">Second Checkbox</md-checkbox>
@@ -157,9 +136,7 @@
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Inline Checkboxes
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Inline Checkboxes</label>
             <div class="md-layout-item md-inline-checkboxes">
               <md-checkbox v-model="checkbox3">a</md-checkbox>
               <md-checkbox v-model="checkbox4">b</md-checkbox>
@@ -179,35 +156,23 @@
 
         <md-card-content>
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Custom Checkboxes & Radios
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Custom Checkboxes & Radios</label>
             <div class="md-layout-item">
               <md-checkbox v-model="checkbox6">Checked</md-checkbox>
               <md-checkbox v-model="checkbox7">Unchecked</md-checkbox>
-              <md-checkbox v-model="checkbox8" disabled
-                >Disabled Checked</md-checkbox
-              >
-              <md-checkbox v-model="checkbox9" disabled
-                >Disabled Unchecked</md-checkbox
-              >
+              <md-checkbox v-model="checkbox8" disabled>Disabled Checked</md-checkbox>
+              <md-checkbox v-model="checkbox9" disabled>Disabled Unchecked</md-checkbox>
             </div>
             <div class="md-layout-item">
               <md-radio v-model="radio1" :value="true">Radio is on</md-radio>
               <md-radio v-model="radio1" :value="false">Radio is off</md-radio>
-              <md-radio v-model="radio2" :value="true" disabled
-                >Disabled Radio is on</md-radio
-              >
-              <md-radio v-model="radio2" :value="false" disabled
-                >Disabled Radio is off</md-radio
-              >
+              <md-radio v-model="radio2" :value="true" disabled>Disabled Radio is on</md-radio>
+              <md-radio v-model="radio2" :value="false" disabled>Disabled Radio is off</md-radio>
             </div>
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Input with success
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Input with success</label>
             <div class="md-layout-item">
               <md-field class="md-valid">
                 <label>Success Input</label>
@@ -218,9 +183,7 @@
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Input with error
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Input with error</label>
             <div class="md-layout-item">
               <md-field class="md-error">
                 <label>Error Input</label>
@@ -231,9 +194,7 @@
           </div>
 
           <div class="md-layout">
-            <label class="md-layout-item md-size-15 md-form-label">
-              Column sizing
-            </label>
+            <label class="md-layout-item md-size-15 md-form-label">Column sizing</label>
             <div class="md-layout-item md-size-20">
               <md-field>
                 <label>.md-size-20</label>
@@ -295,42 +256,42 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.md-card .md-card-actions {
-  border: none;
-}
+// .md-card .md-card-actions {
+//   border: none;
+// }
 
-.md-inline-checkboxes {
-  display: inline-flex;
+// .md-inline-checkboxes {
+//   display: inline-flex;
 
-  .md-checkbox {
-    margin-top: 15px !important;
-  }
-}
+//   .md-checkbox {
+//     margin-top: 15px !important;
+//   }
+// }
 
-.md-checkbox,
-.md-radio {
-  margin-top: 15px;
-  margin-bottom: 0.5rem;
-}
+// .md-checkbox,
+// .md-radio {
+//   margin-top: 15px;
+//   margin-bottom: 0.5rem;
+// }
 
-.md-checkbox,
-.md-radio {
-  display: flex;
-}
+// .md-checkbox,
+// .md-radio {
+//   display: flex;
+// }
 
-.md-radio /deep/ .md-radio-container {
-  margin-left: 5px;
-  position: relative;
-  left: -3px;
-}
+// .md-radio /deep/ .md-radio-container {
+//   margin-left: 5px;
+//   position: relative;
+//   left: -3px;
+// }
 
-.md-form-label + .md-layout-item .md-checkbox:not(:first-child),
-.md-form-label + .md-layout-item + .md-layout-item .md-radio:not(:first-child),
-.md-form-label + .md-layout-item .md-radio {
-  margin-top: 0;
-}
+// .md-form-label + .md-layout-item .md-checkbox:not(:first-child),
+// .md-form-label + .md-layout-item + .md-layout-item .md-radio:not(:first-child),
+// .md-form-label + .md-layout-item .md-radio {
+//   margin-top: 0;
+// }
 
-.form-control-static {
-  margin-top: 6px;
-}
+// .form-control-static {
+//   margin-top: 6px;
+// }
 </style>

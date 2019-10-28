@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper" :class="[
-      { 'nav-open':true },
-      
-    ]">
+  <div
+    class="wrapper"
+    :class="[{'nav-open': $sidebar.showSidebar}, {'rtl': $route.meta.rtlActive}]"
+  >
     <!-- SIDEBAR -->
     <side-bar
       :active-color="sidebarBackground"
@@ -13,16 +13,18 @@
     </side-bar>
 
     <!-- CONTENIDO -->
-    <md-content>
-      <div class="main-panel">
+
+    <div class="main-panel">
+      <md-content @scroll.native="handleScroll($event)" style="z-index:1000;">
+        <top-navbar></top-navbar>
         <div>
           <zoom-center-transition :duration="200" mode="out-in">
             <!-- your content here -->
             <router-view></router-view>
           </zoom-center-transition>
         </div>
-      </div>
-    </md-content>
+      </md-content>
+    </div>
   </div>
 </template>
 <script>
@@ -72,7 +74,8 @@ export default {
   },
   methods: {
     handleScroll(e) {
-      console.log(e);
+      console.log("aaaaaaaaaaa");
+      // console.log(e);
     },
     toggleSidebar() {
       if (this.$sidebar.showSidebar) {

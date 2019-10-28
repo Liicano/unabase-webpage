@@ -1,12 +1,30 @@
+/* eslint-disable prettier/prettier */
 import Vue from "vue";
+
+
+import Vuetify from 'vuetify'
+
+Vue.use(Vuetify)
+
+// index.js or main.js
+import 'vuetify/dist/vuetify.min.css'
+
+
+import {
+  store
+} from './store/store'
 import VueRouter from "vue-router";
 import DashboardPlugin from "./material-dashboard";
 
 import vueScrollTo from 'vue-scrollto';
 
+import VueFullpage from "fullpage-vue";
+
+Vue.use(VueFullpage)
+
 Vue.use(vueScrollTo, {
   container: "body",
-  duration: 2000,
+  duration: 1500,
   easing: "ease",
   offset: 0,
   force: true,
@@ -34,9 +52,14 @@ const router = new VueRouter({
   routes, // short for routes: routes
   scrollBehavior: to => {
     if (to.hash) {
-      return { selector: to.hash };
+      return {
+        selector: to.hash
+      };
     } else {
-      return { x: 0, y: 0 };
+      return {
+        x: 0,
+        y: 0
+      };
     }
   },
   linkExactActiveClass: "nav-item active"
@@ -54,6 +77,7 @@ new Vue({
   el: "#app",
   render: h => h(App),
   router,
+  store,
   data: {
     Chartist: Chartist
   }

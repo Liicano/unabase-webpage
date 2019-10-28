@@ -1,7 +1,7 @@
 <template>
   <div
     class="sidebar"
-    style="box-shadow: none !important;"
+    style="box-shadow: none !important; background: white !important;"
     :data-color="activeColor"
     :data-image="backgroundImage"
     :data-background-color="backgroundColor"
@@ -15,9 +15,9 @@
       </div>
     </div>
 
-    <div class="md-layout" style="margin-top: 40%;">
+    <div class="md-layout sidebarContainer">
       <div class="md-layout-item md-size-20" style="z-index: 1000;">
-        <div class="scrollbar" id="style-1">
+        <div :class="['scrollbar scrollContainer', thumbColor]">
           <div id="scrollDiv" class="force-overflow">
             <div id="somos_2" style="height: 100vh !important;"></div>
             <div id="mira_el_video_2" style="height: 100vh !important;"></div>
@@ -27,64 +27,67 @@
 
       <div class="md-layout-item md-size-80" style="z-index:100;">
         <md-list>
-          <md-list-item style="cursor:pointer;"   v-scroll-to="'#somos'" @click="scrollToPoint(150)">
+          <md-list-item
+            style="cursor:pointer;"
+            v-scroll-to="'#somos'"
+            @click="scrollToPoint('somosColor', 150, 0)"
+          >
             <a style="padding-left: 20px; z-index:100" href="#somos_2" class="md-body-1">SOMOS</a>
           </md-list-item>
-          <md-list-item  v-scroll-to="'#mira_el_video'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(1750)">
-            <a href='#mira_el_video_2' style="padding-left: 20px; z-index:100" class="md-body-1">MIRA EL VIDEO</a>
+          <md-list-item
+            v-scroll-to="'#mira_el_video'"
+            style="padding-top:7vh; cursor:pointer;"
+            @click="scrollToPoint('mira_el_videoColor', 1750, 1)"
+          >
+            <a
+              href="#mira_el_video_2"
+              style="padding-left: 20px; z-index:100"
+              class="md-body-1"
+            >MIRA EL VIDEO</a>
           </md-list-item>
-          <md-list-item v-scroll-to="'#smart_budget'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(3300)">
+          <md-list-item
+            v-scroll-to="'#smart_budget'"
+            style="padding-top:7vh; cursor:pointer;"
+            @click="scrollToPoint('smart_budgetColor', 3300, 2)"
+          >
             <a style="padding-left: 20px;" class="md-body-1">SMARTBUDGET</a>
           </md-list-item>
-          <md-list-item v-scroll-to="'#caracteristicas'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(4850)">
+          <md-list-item
+            v-scroll-to="'#caracteristicas'"
+            style="padding-top:7vh; cursor:pointer;"
+            @click="scrollToPoint('caracteristicasColor', 4850, 3)"
+          >
             <a style="padding-left: 20px;" class="md-body-1">CARACTERISTICAS</a>
           </md-list-item>
-          <md-list-item v-scroll-to="'#clientes'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(6450)">
+          <md-list-item
+            v-scroll-to="'#clientes'"
+            style="padding-top:7vh; cursor:pointer;"
+            @click="scrollToPoint('clienteColor', 6450, 4)"
+          >
             <a style="padding-left: 20px;" class="md-body-1">CLIENTES</a>
           </md-list-item>
-          <md-list-item v-scroll-to="'#contacto'" style="padding-top:7vh; cursor:pointer;" @click="scrollToPoint(8000)">
+          <md-list-item
+            v-scroll-to="'#contacto'"
+            style="padding-top:7vh; cursor:pointer;"
+            @click="scrollToPoint('contactColor', 8000, 5)"
+          >
             <a style="padding-left: 20px;" class="md-body-1">CONTACTO</a>
           </md-list-item>
         </md-list>
       </div>
     </div>
-    <!-- <div class="logo">
-      <a href="https://www.creative-tim.com" class="simple-text logo-mini" target="_blank">
-        <div class="logo-img">
-          <img src="../../../public/img/logo_unabase.png" />
-        </div>
-      </a>
 
-      <div class="navbar-minimize">
-        <md-button
-          id="minimizeSidebar"
-          class="md-round md-just-icon md-transparent"
-          @click="minimizeSidebar"
-        >
-          <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
-          <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
-        </md-button>
-      </div>
-    </div>-->
-    <!-- <div class="sidebar-wrapper" ref="sidebarScrollArea">
-      <slot></slot>
-      <md-list class="nav">
-        <slot name="links">
-          <sidebar-item v-for="(link, index) in sidebarLinks" :key="link.name + index" :link="link">
-            <sidebar-item
-              v-for="(subLink, index) in link.children"
-              :key="subLink.name + index"
-              :link="subLink"
-            ></sidebar-item>
-          </sidebar-item>
-        </slot>
-      </md-list>
-    </div>-->
+    <!-- COMPONENTE PRINCIPAL (WELCOME) -->
+
+    <div style="display:none !important;">
+      <welcome @scrollToPoint="scrollToPoint" ref="welcome" style="display:none;"></welcome>
+    </div>
   </div>
 </template>
 <script>
-import welcome from '../../pages/landing_page/welcome'
-import $ from 'jquery'
+import welcome from "../../pages/landing_page/welcome";
+import { mapMutations, mapGetters } from "vuex";
+import $ from "jquery";
 export default {
   name: "sidebar",
   props: {
@@ -137,6 +140,12 @@ export default {
       default: true
     }
   },
+  data() {
+    return {
+      thumbColor: "somosColor",
+      show: false
+    };
+  },
   provide() {
     return {
       autoClose: this.autoClose
@@ -148,20 +157,29 @@ export default {
         this.$sidebar.toggleMinimize();
       }
     },
+    ...mapMutations({
+      changeSectionState: "changeSectionState"
+    }),
 
-  scrollToPoint(n){
-    console.log('scroll')
-    $("#style-1").scrollTop(n);
-  }
+    scrollToPoint(classColor, n, section) {
+      if (classColor) {
+        this.thumbColor = classColor;
+      }
+      this.changeSectionState(section);
+      $(".scrollContainer").scrollTop(n);
+    }
   },
   computed: {
     sidebarStyle() {
       return {
         // backgroundImage: `url(${this.backgroundImage})`
       };
-    }
+    },
+    ...mapGetters({
+      getSectionState: "getSectionState"
+    })
   },
-  components:{
+  components: {
     welcome
   },
   beforeDestroy() {
@@ -179,6 +197,18 @@ export default {
   }
 }
 
+@media (min-width: 992px) {
+  .sidebarContainer {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebarContainer {
+    margin-top: 10%;
+  }
+}
+
 .scrollbar {
   margin-left: 30px;
   float: left;
@@ -189,30 +219,58 @@ export default {
   margin-bottom: 25px;
 }
 
+.scrollContainer {
+  scroll-behavior: smooth;
+  border-radius: 10px;
+}
+
 .force-overflow {
   min-height: 1550vh;
+  border-radius: 20px !important;
 }
 
-#style-1::-webkit-scrollbar-track {
-  border-radius: 10px;
+.scrollContainer::-webkit-scrollbar-track {
+  border-radius: 20px !important;
   background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar {
+.scrollContainer::-webkit-scrollbar {
   width: 20px;
+  border-radius: 20px !important;
   background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar-thumb {
+.scrollContainer::-webkit-scrollbar-thumb {
   border-radius: 10px;
   padding-top: 300px !important;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+}
+
+.somosColor.scrollContainer::-webkit-scrollbar-thumb {
   background-color: #34cc02;
 }
 
+.mira_el_videoColor.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #f9bd00;
+}
+
+.smart_budgetColor.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #03d6f9;
+}
+
+.caracteristicasColor.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #fc4903;
+}
+
+.clienteColor.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.contactColor.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+}
 
 /* MAIN SCROLLBAR */
-
 
 /* ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -233,12 +291,7 @@ export default {
   background-color: #34cc02;
 } */
 
-
-
-
 span {
   font-family: Helvetica;
 }
-
-
 </style>

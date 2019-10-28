@@ -13,27 +13,23 @@
             <md-table-row slot="md-table-row" slot-scope="{ item }">
               <md-table-cell md-label="#">{{ item.id }}</md-table-cell>
               <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
-              <md-table-cell md-label="Country">{{
+              <md-table-cell md-label="Country">
+                {{
                 item.country
-              }}</md-table-cell>
+                }}
+              </md-table-cell>
               <md-table-cell md-label="City">{{ item.city }}</md-table-cell>
               <md-table-cell md-label="Salary">{{ item.salary }}</md-table-cell>
               <md-table-cell md-label="Actions" :class="getAlignClasses(item)">
-                <md-button
-                  class="md-just-icon"
-                  :class="getClass(item.icon1, item.id)"
-                  ><md-icon>{{ item.icon1 }}</md-icon></md-button
-                >
-                <md-button
-                  class="md-just-icon"
-                  :class="getClass(item.icon2, item.id)"
-                  ><md-icon>{{ item.icon2 }}</md-icon></md-button
-                >
-                <md-button
-                  class="md-just-icon"
-                  :class="getClass(item.icon3, item.id)"
-                  ><md-icon>{{ item.icon3 }}</md-icon></md-button
-                >
+                <md-button class="md-just-icon" :class="getClass(item.icon1, item.id)">
+                  <md-icon>{{ item.icon1 }}</md-icon>
+                </md-button>
+                <md-button class="md-just-icon" :class="getClass(item.icon2, item.id)">
+                  <md-icon>{{ item.icon2 }}</md-icon>
+                </md-button>
+                <md-button class="md-just-icon" :class="getClass(item.icon3, item.id)">
+                  <md-icon>{{ item.icon3 }}</md-icon>
+                </md-button>
               </md-table-cell>
             </md-table-row>
           </md-table>
@@ -57,22 +53,24 @@
               md-auto-select
             >
               <md-table-cell md-label="#">{{ item.id }}</md-table-cell>
-              <md-table-cell md-label="Product Name">{{
+              <md-table-cell md-label="Product Name">
+                {{
                 item.name
-              }}</md-table-cell>
+                }}
+              </md-table-cell>
               <md-table-cell md-label="Type">{{ item.type }}</md-table-cell>
               <md-table-cell md-label="Qty">{{ item.qty }}</md-table-cell>
               <md-table-cell md-label="Price">{{ item.price }}</md-table-cell>
-              <md-table-cell md-label="Amount" :class="getAlignClasses(item)">{{
+              <md-table-cell md-label="Amount" :class="getAlignClasses(item)">
+                {{
                 item.amount
-              }}</md-table-cell>
+                }}
+              </md-table-cell>
             </md-table-row>
           </md-table>
           <div class="table table-stats table-striped">
             <div class="td-price">
-              <div class="td-total">
-                Total
-              </div>
+              <div class="td-total">Total</div>
               <span>
                 <small>€</small>
                 €12,999
@@ -93,7 +91,7 @@
         <md-card-content>
           <md-table v-model="shoppingCartTable" class="table-shopping">
             <md-table-row slot="md-table-row" slot-scope="{ item }">
-              <md-table-cell md-label="">
+              <md-table-cell md-label>
                 <div class="img-container">
                   <img :src="item.image" alt="products" />
                 </div>
@@ -115,13 +113,15 @@
                   <md-button
                     class="md-round md-info md-just-icon"
                     @click.native="increaseQuantity(item)"
-                    ><md-icon>add</md-icon></md-button
                   >
+                    <md-icon>add</md-icon>
+                  </md-button>
                   <md-button
                     class="md-round md-info md-just-icon"
                     @click.native="decreaseQuantity(item)"
-                    ><md-icon>remove</md-icon></md-button
                   >
+                    <md-icon>remove</md-icon>
+                  </md-button>
                 </div>
               </md-table-cell>
               <md-table-cell md-label="Amount" class="td-number">
@@ -129,17 +129,15 @@
                 {{ item.amount }}
               </md-table-cell>
               <md-table-cell>
-                <md-button class="md-just-icon md-round md-simple"
-                  ><md-icon>close</md-icon></md-button
-                >
+                <md-button class="md-just-icon md-round md-simple">
+                  <md-icon>close</md-icon>
+                </md-button>
               </md-table-cell>
             </md-table-row>
           </md-table>
           <div class="table table-stats">
             <div class="td-price">
-              <div class="td-total">
-                Total
-              </div>
+              <div class="td-total">Total</div>
               <span>
                 <small>€</small>
                 {{ shoppingTotal }}
@@ -350,47 +348,47 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.text-right /deep/ .md-table-cell-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.md-table /deep/ .md-table-head:last-child {
-  text-align: right;
-}
+// .text-right /deep/ .md-table-cell-container {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+// .md-table /deep/ .md-table-head:last-child {
+//   text-align: right;
+// }
 
-.table-stats {
-  display: flex;
-  align-items: center;
-  text-align: right;
-  flex-flow: row wrap;
+// .table-stats {
+//   display: flex;
+//   align-items: center;
+//   text-align: right;
+//   flex-flow: row wrap;
 
-  .td-price .td-total {
-    display: inline-flex;
-    font-weight: 500;
-    font-size: 1.0625rem;
-    margin-right: 50px;
-  }
+//   .td-price .td-total {
+//     display: inline-flex;
+//     font-weight: 500;
+//     font-size: 1.0625rem;
+//     margin-right: 50px;
+//   }
 
-  &.table-striped .td-price {
-    border-bottom: 0;
-  }
+//   &.table-striped .td-price {
+//     border-bottom: 0;
+//   }
 
-  .td-price {
-    font-size: 26px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
+//   .td-price {
+//     font-size: 26px;
+//     border-top: 1px solid #ddd;
+//     border-bottom: 1px solid #ddd;
+//   }
 
-  .td-price,
-  > div {
-    flex: 0 0 100%;
-    padding: 12px 8px;
-  }
-}
+//   .td-price,
+//   > div {
+//     flex: 0 0 100%;
+//     padding: 12px 8px;
+//   }
+// }
 
-.table-shopping /deep/ .md-table-head:nth-child(5),
-.table-shopping /deep/ .md-table-head:nth-child(7),
-.table-shopping /deep/ .md-table-head:nth-child(6) {
-  text-align: right;
-}
+// .table-shopping /deep/ .md-table-head:nth-child(5),
+// .table-shopping /deep/ .md-table-head:nth-child(7),
+// .table-shopping /deep/ .md-table-head:nth-child(6) {
+//   text-align: right;
+// }
 </style>
