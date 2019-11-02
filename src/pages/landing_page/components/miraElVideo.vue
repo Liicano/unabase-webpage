@@ -2,13 +2,17 @@
   <div style="heigth: 100vh;">
     <div class="md-layout">
       <div class="md-layout-item md-size-100">
-        <md-empty-state
-          style="margin-top: 25% !important;"
-          class="md-success"
-          md-icon="format_list_numbered"
-          md-label="Seccion # 2"
-          md-description="MIRA EL VIDEO"
-        ></md-empty-state>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/Y5oXr9ASHR8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <!-- <video width="400" controls style="margin-top:10%;">
+          <source src="https://www.youtube.com/watch?v=Y5oXr9ASHR8" type="video/mp4" />
+        </video>-->
       </div>
     </div>
   </div>
@@ -25,3 +29,10 @@ export default {
   mounted() {}
 };
 </script>
+
+<style>
+video {
+  width: 100%;
+  height: 100vh;
+}
+</style>
