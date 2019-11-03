@@ -31,6 +31,7 @@
     "sass": "^1.23.1",
     "sweetalert2": "8.11.6",
     "vee-validate": "2.2.9",
+    "video.js": "^7.6.5",
     "vue": "2.6.10",
     "vue-clickaway": "2.2.2",
     "vue-fullpage.js": "^0.1.4",

@@ -2,7 +2,11 @@
   <div style="heigth: 100vh;">
     <v-layout class="principalContainer" style="heigth: 100vh !important;">
       <v-flex>
-        <v-card class="mx-auto fade-in" max-width="344" style="margin-top: 25%; box-shadow: none;">
+        <v-card
+          class="mx-auto fade-in"
+          max-width="344"
+          style="margin-top: 25%; box-shadow: none; z-index:1000 !important; "
+        >
           <v-card-text>
             <span class="display-1 text--primary">
               <b>Smart Budget</b>
@@ -18,8 +22,15 @@
               class="caption"
             >Con unabase puedes proyectar los costos, saber cual es el valor de tu proyecto, estar al tanto de los gastos reales, saber en que lineas estuviste bien y en cuales no tanto. Nos preocupamos de la visibilidad y utilidad de tu negocio.</div>
           </v-card-text>
-          <v-card-actions>
-            <v-btn dark flat class="black--text font-weight-black" style="cursor:pointer;" tile>
+          <v-card-actions style="z-index:1000 !important;">
+            <v-btn
+              dark
+              flat
+              class="black--text font-weight-black"
+              style="cursor:pointer;z-index:1000 !important;"
+              tile
+              @click="goToDemo()"
+            >
               Prueba el demo
               <v-icon right>keyboard_arrow_right</v-icon>
             </v-btn>
@@ -172,7 +183,12 @@ export default {
     return {};
   },
   components: {},
-  methods: {},
+  methods: {
+    goToDemo() {
+      console.log("redirijiendo a demo...");
+      window.open("http://demo2017.unabase.cl/", "_blank");
+    }
+  },
   created() {},
   mounted() {}
 };

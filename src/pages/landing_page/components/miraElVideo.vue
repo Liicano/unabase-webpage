@@ -2,17 +2,17 @@
   <div style="heigth: 100vh;">
     <div class="md-layout">
       <div class="md-layout-item md-size-100">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/Y5oXr9ASHR8"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <!-- <video width="400" controls style="margin-top:10%;">
-          <source src="https://www.youtube.com/watch?v=Y5oXr9ASHR8" type="video/mp4" />
-        </video>-->
+        <div class="player_overlay">
+          <video
+            width="400"
+            controls
+            poster="../../../../public/video/video_presentation.png"
+            preload="none"
+            onclick="this.play()"
+          >
+            <source src="../../../../public/video/presentation.webm" type="video/webm" />
+          </video>
+        </div>
       </div>
     </div>
   </div>
@@ -32,7 +32,25 @@ export default {
 
 <style>
 video {
-  width: 100%;
-  height: 100vh;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (min-width: 992px) {
+  .player_overlay {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .player_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
 }
 </style>
