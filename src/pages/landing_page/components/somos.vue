@@ -1,13 +1,13 @@
 <template>
   <div style="heigth: 100vh;">
-    <v-layout class="principalContainer" style="heigth: 100vh !important;">
-      <v-flex>
+    <div class="principalContainer md-layout" style="heigth: 100vh !important;">
+      <div class="md-layout-item md-size-50">
         <v-card
           class="mx-auto fade-in"
           max-width="344"
-          style="margin-top: 25%; box-shadow: none; z-index:1000 !important; "
+          style="margin-top: 25%; box-shadow: none; z-index:0 !important; "
         >
-          <v-card-text>
+          <v-card-text style="z-index:1000 !important;">
             <span class="display-1 text--primary">
               <b>Smart Budget</b>
             </span>
@@ -22,7 +22,7 @@
               class="caption"
             >Con unabase puedes proyectar los costos, saber cual es el valor de tu proyecto, estar al tanto de los gastos reales, saber en que lineas estuviste bien y en cuales no tanto. Nos preocupamos de la visibilidad y utilidad de tu negocio.</div>
           </v-card-text>
-          <v-card-actions style="z-index:1000 !important;">
+          <!-- <v-card-actions style="z-index:1000 !important;">
             <v-btn
               dark
               flat
@@ -34,95 +34,34 @@
               Prueba el demo
               <v-icon right>keyboard_arrow_right</v-icon>
             </v-btn>
-            <!-- <span class="subtitle-1 font-weight-black">
-              <span>Prueba el demo</span>
-              <v-icon>keyboard_arrow_right</v-icon>
-            </span>-->
-          </v-card-actions>
+           
+          </v-card-actions>-->
         </v-card>
-      </v-flex>
+
+        <div style="margin-left: 18%;">
+          <v-btn
+            dark
+            flat
+            class="black--text font-weight-black"
+            style="cursor:pointer;z-index:1000 !important;"
+            tile
+            @click="goToDemo()"
+          >
+            Prueba el demo
+            <v-icon right>keyboard_arrow_right</v-icon>
+          </v-btn>
+        </div>
+      </div>
       <v-spacer></v-spacer>
-      <v-flex>
-        <div class="animationContainer">
-          <!--Barra izquierda width menos de lo normal alado de la normal (verde)-->
-          <div class="container7 slide-in-top">
-            <div class="tape7"></div>
-          </div>
-
-          <!--Barra izquierda width normal alado de la super fina (amarilla)-->
-          <div class="container6 slide-in-top3">
-            <div class="tape6"></div>
-          </div>
-
-          <!--Barra izquierda super fina alado de la ancha-->
-          <div class="container5 slide-in-top">
-            <div class="tape5"></div>
-          </div>
-
-          <!--Barra izquierda ancha-->
-          <div class="container4 slide-in-top3">
-            <div class="tape4"></div>
-          </div>
-
-          <!--barra verde-->
-          <div class="container slide-in-top">
-            <div class="tape"></div>
-          </div>
-
-          <!--bolita verde-->
-          <div class="container2 slide-in-top">
-            <div class="tape2"></div>
-          </div>
-
-          <!--barra finita derecha-->
-          <div class="container3 slide-in-top2">
-            <div class="tape3"></div>
-          </div>
-
-          <!--Barra derecha segunda derecha-->
-          <div class="container8 slide-in-top">
-            <div class="tape8"></div>
-          </div>
-
-          <!--Barra derecha tercera derecha-->
-          <div class="container9 slide-in-top">
-            <div class="tape9"></div>
-          </div>
-
-          <!--Barra derecha cuarta derecha-->
-          <div class="container10 slide-in-top2">
-            <div class="tape10"></div>
-          </div>
-
-          <div class="v-container">
-            <!-- v de unabase lado derecho-->
-            <div class="container-v slide-in-top">
-              <div class="tape-v"></div>
-            </div>
-
-            <!-- v de unabase lado izquierdo-->
-            <div class="container-v-i slide-in-top">
-              <div class="tape-v-i"></div>
-            </div>
-            <!-- v de unabase lado derecho-->
-            <div class="container-v slide-in-top">
-              <div class="tape-v"></div>
-            </div>
-
-            <!-- v de unabase lado izquierdo-->
-            <div class="container-v-i slide-in-top">
-              <div class="tape-v-i"></div>
-            </div>
-          </div>
-
-          <!-- ANIMATION CONTAINERRRRRRRRRRRR -->
-          <div class="animation2_container" style="display:none;">
-            <!--Barra izquierda width menos de lo normal alado de la normal-->
+      <div class="md-layout-item md-size-50">
+        <v-container>
+          <div class="animationContainer">
+            <!--Barra izquierda width menos de lo normal alado de la normal (verde)-->
             <div class="container7 slide-in-top">
               <div class="tape7"></div>
             </div>
 
-            <!--Barra izquierda width normal alado de la super fina-->
+            <!--Barra izquierda width normal alado de la super fina (amarilla)-->
             <div class="container6 slide-in-top3">
               <div class="tape6"></div>
             </div>
@@ -141,6 +80,7 @@
             <div class="container slide-in-top">
               <div class="tape"></div>
             </div>
+
             <!--bolita verde-->
             <div class="container2 slide-in-top">
               <div class="tape2"></div>
@@ -166,14 +106,87 @@
               <div class="tape10"></div>
             </div>
 
-            <!--Letra v-->
-            <div class="container11 slide-in-top2">
-              <div class="tape11"></div>
+            <div class="v-container">
+              <!-- v de unabase lado derecho-->
+              <div class="container-v slide-in-top">
+                <div class="tape-v"></div>
+              </div>
+
+              <!-- v de unabase lado izquierdo-->
+              <div class="container-v-i slide-in-top">
+                <div class="tape-v-i"></div>
+              </div>
+              <!-- v de unabase lado derecho-->
+              <div class="container-v slide-in-top">
+                <div class="tape-v"></div>
+              </div>
+
+              <!-- v de unabase lado izquierdo-->
+              <div class="container-v-i slide-in-top">
+                <div class="tape-v-i"></div>
+              </div>
+            </div>
+
+            <!-- ANIMATION CONTAINERRRRRRRRRRRR -->
+            <div class="animation2_container" style="display:none;">
+              <!--Barra izquierda width menos de lo normal alado de la normal-->
+              <div class="container7 slide-in-top">
+                <div class="tape7"></div>
+              </div>
+
+              <!--Barra izquierda width normal alado de la super fina-->
+              <div class="container6 slide-in-top3">
+                <div class="tape6"></div>
+              </div>
+
+              <!--Barra izquierda super fina alado de la ancha-->
+              <div class="container5 slide-in-top">
+                <div class="tape5"></div>
+              </div>
+
+              <!--Barra izquierda ancha-->
+              <div class="container4 slide-in-top3">
+                <div class="tape4"></div>
+              </div>
+
+              <!--barra verde-->
+              <div class="container slide-in-top">
+                <div class="tape"></div>
+              </div>
+              <!--bolita verde-->
+              <div class="container2 slide-in-top">
+                <div class="tape2"></div>
+              </div>
+
+              <!--barra finita derecha-->
+              <div class="container3 slide-in-top2">
+                <div class="tape3"></div>
+              </div>
+
+              <!--Barra derecha segunda derecha-->
+              <div class="container8 slide-in-top">
+                <div class="tape8"></div>
+              </div>
+
+              <!--Barra derecha tercera derecha-->
+              <div class="container9 slide-in-top">
+                <div class="tape9"></div>
+              </div>
+
+              <!--Barra derecha cuarta derecha-->
+              <div class="container10 slide-in-top2">
+                <div class="tape10"></div>
+              </div>
+
+              <!--Letra v-->
+              <div class="container11 slide-in-top2">
+                <div class="tape11"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </v-flex>
-    </v-layout>
+        </v-container>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -255,7 +268,7 @@ export default {
 
 .container {
   position: absolute;
-  top: -75%;
+  top: -3%;
   bottom: 0;
   left: 11%;
   right: 0;
@@ -263,18 +276,20 @@ export default {
 
 .container4 {
   position: absolute;
-  top: -10%;
+  top: 0;
+  width: 60px;
   bottom: 0;
-  left: 6%;
+  left: 49%;
   right: 0;
 }
 
 .container5 {
   position: absolute;
-  top: -1%;
+  top: 0;
   bottom: 0;
-  left: -5%;
+  left: 46.5%;
   right: 0;
+  width: 10px;
 }
 
 .tape5 {
@@ -288,26 +303,29 @@ export default {
 
 .container3 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 32%;
+  left: 64.5%;
+  width: 25px;
   right: 0;
 }
 
 .container2 {
   position: absolute;
-  top: 43%;
+  top: 0;
   bottom: 0;
-  left: 22%;
+  left: 58.5%;
   right: 0;
+  width: 40px;
 }
 
 .container6 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 1%;
-  right: 15%;
+  left: 40%;
+  right: 0;
+  width: 40px;
 }
 .tape6 {
   margin: auto;
@@ -320,10 +338,11 @@ export default {
 
 .container7 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 0;
-  right: 25%;
+  left: 82.5%;
+  right: 0;
+  width: 20px;
 }
 .tape7 {
   margin: auto;
@@ -336,10 +355,11 @@ export default {
 
 .container8 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 42%;
+  left: 68.5%;
   right: 0;
+  width: 40px;
 }
 .tape8 {
   margin: auto;
@@ -352,10 +372,11 @@ export default {
 
 .container9 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 54%;
+  left: 74.5%;
   right: 0;
+  width: 40px;
 }
 .tape9 {
   margin: auto;
@@ -368,10 +389,11 @@ export default {
 
 .container10 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
-  left: 61.5%;
+  left: 80.5%;
   right: 0;
+  width: 10px;
 }
 .tape10 {
   margin: auto;
@@ -384,7 +406,7 @@ export default {
 
 .container11 {
   position: absolute;
-  top: -5%;
+  top: 0;
   bottom: 0;
   left: 61.5%;
   right: 0;
@@ -480,7 +502,7 @@ export default {
 
 .v-container {
   position: absolute;
-  top: -90%;
+  top: 30%;
   bottom: 0;
   left: 27%;
   right: 0%;
