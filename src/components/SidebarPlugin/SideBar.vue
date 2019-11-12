@@ -426,6 +426,6 @@ span {
 }
 
 .md-button.md-button-clean {
-  transition: none;
+  transition: none !important;
 }
 </style>
