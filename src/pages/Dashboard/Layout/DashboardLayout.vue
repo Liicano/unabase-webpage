@@ -140,4 +140,8 @@ $scaleSize: 0.95;
 .main-panel::-webkit-scrollbar {
   display: none;
 }
+
+.body {
+  font-family: Helvetica !important;
+}
 </style>

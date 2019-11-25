@@ -14,7 +14,7 @@
             <br />
             <span
               class="subtitle-1"
-            >Optimiza tus finanzas controlando los gastos de tu empresa y projectos.</span>
+            >Optimiza tus finanzas controlando los gastos de tu empresa y proyectos.</span>
 
             <br />
             <br />
@@ -148,8 +148,8 @@ export default {
 .animatedContainer {
   height: 100vh !important;
   width: 100% !important;
-  padding: 5%;
-  margin-top: -10%;
+  padding: 10%;
+  margin-top: -15%;
   margin-left: -20%;
 }
 /* ================================ */
@@ -401,50 +401,42 @@ export default {
   top: 0%;
   left: -36px;
 
-  -webkit-transform: rotate(-40deg);
-  -moz-transform: rotate(-40deg);
-  -o-transform: rotate(-40deg);
-  -ms-transform: rotate(-40deg);
-  transform: rotate(-40deg);
+  transform: rotate(-45deg);
 }
 
 .tape-v {
   margin: auto;
   height: 130px;
-  width: 45px;
+  width: 40px;
   opacity: none;
   border-radius: 50px;
   background: #000000;
 
-  -webkit-transform: rotate(-40deg);
-  -moz-transform: rotate(-40deg);
-  -o-transform: rotate(-40deg);
-  -ms-transform: rotate(-40deg);
-  transform: rotate(-40deg);
+  transform: rotate(-45deg);
 }
 
 .container-v-i {
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 30px;
 
-  transform: rotate(40deg);
+  transform: rotate(45deg);
 }
 
 .tape-v-i {
   margin: auto;
   height: 130px;
-  width: 45px;
+  width: 40px;
   opacity: none;
   border-radius: 50px;
   background: #000000;
 
-  transform: rotate(40deg);
+  transform: rotate(45deg);
 }
 
 .v-container-all {
   position: absolute;
-  margin-top: -50%;
+  margin-top: 15%;
   left: 5px;
 }
 
@@ -452,24 +444,24 @@ export default {
   0% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
-    opacity: 0;
+    opacity: none;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    opacity: 1;
+    opacity: none;
   }
 }
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
-    opacity: 0;
+    opacity: none;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    opacity: 1;
+    opacity: none;
   }
 }
 

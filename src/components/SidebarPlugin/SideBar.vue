@@ -63,7 +63,7 @@
             class="slide-in-left"
             @click="scrollToPoint('smart_budgetColor', 3300, 2)"
           >
-            <a style="padding-left: 20px;" class="md-body-1">SMARTBUDGET</a>
+            <a style="padding-left: 20px;" class="md-body-1">SMART BUDGET</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#caracteristicas'"

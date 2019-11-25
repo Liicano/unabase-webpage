@@ -1,7 +1,7 @@
 <template>
   <div style="heigth: 100vh; margin-top: 10%;">
     <div class="md-layout">
-      <div class="md-layout-item md-size-33 md-small-size-100 slide-in-bottom-3">
+      <div class="md-layout-item md-size-33 md-small-size-100 slide-in-bottom-3 noPadding">
         <v-card
           class="mx-auto fade-in"
           max-width="344"
@@ -42,39 +42,42 @@
         </v-card>
       </div>
 
-      <div class="md-layout-item md-size-53 md-small-size-100 slide-in-bottom-1">
+      <div
+        class="md-layout-item md-size-45 md-small-size-100 slide-in-bottom-1 noPadding hideOnLargeScreen"
+      >
         <v-card
           class="mx-auto fade-in"
-          max-width="344"
-          style="margin-top: 25%; box-shadow: none; z-index:1000 !important;"
+          max-width="100%"
+          style="margin-top: 15%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text>
-            <span class="display-1 font-weight-regular pull-right">Solicita Una Demo</span>
+            <span class="display-1 font-weight-regular pull-left">Solicita Una Demo</span>
+            <v-spacer></v-spacer>
 
             <br />
             <br />
-            <v-layout style="padding-top: 5px;">
-              <v-flex style="padding: 5px;">
+            <v-layout style="padding-top: 10px;">
+              <v-flex md6 xs6>
                 <v-text-field placeholder="Nombre" solo></v-text-field>
               </v-flex>
 
-              <v-flex style="padding: 5px;">
+              <v-flex md6 xs6 style="margin-left: 10px;">
                 <v-text-field placeholder="Apellido" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
-              <v-flex style="padding: 5px;">
+              <v-flex md6 xs6>
                 <v-text-field placeholder="Empresa" solo></v-text-field>
               </v-flex>
 
-              <v-flex style="padding: 5px;">
+              <v-flex md6 xs6 style="margin-left: 10px;">
                 <v-text-field placeholder="Email" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
-              <v-flex style="padding: 5px;">
+              <v-flex md6 xs6>
                 <v-text-field placeholder="Telefono" solo></v-text-field>
               </v-flex>
 
@@ -84,72 +87,93 @@
             </v-layout>
             <v-layout>
               <v-flex md6>
-                <v-btn small color="green" dark>Enviar</v-btn>
+                <v-btn color="#34cc02" class="white--text" dark large>Enviar</v-btn>
               </v-flex>
             </v-layout>
           </v-card-text>
         </v-card>
       </div>
 
-      <div class="md-layout-item md-size-13 md-small-size-100 slide-in-bottom-2">
+      <div
+        class="md-layout-item md-size-22 md-small-size-100 slide-in-bottom-2 noPadding hideOnLargeScreen"
+      >
         <v-card
           class="mx-auto fade-in"
-          max-width="344"
-          style="margin-top: 25%; box-shadow: none; z-index:1000 !important;"
+          max-width="200"
+          style="margin-top: 43%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text class="borderClass-right">
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <img
-                  @click="goTo('instagram')"
-                  src="../../../../public/img/instagram.svg"
-                  width="40px;"
-                  alt="instagram"
-                />
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                  <img
+                    color="white"
+                    class="svg-icon"
+                    @click="goTo('instagram')"
+                    src="../../../../public/img/instagram.svg"
+                    width="40px;"
+                    alt="instagram"
+                  />
+                </div>
               </v-flex>
             </v-layout>
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <img
-                  @click="goTo('youtube')"
-                  src="../../../../public/img/youtube.svg"
-                  width="40px;"
-                  alt="youtube"
-                />
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                  <img
+                    class="svg-icon"
+                    @click="goTo('youtube')"
+                    src="../../../../public/img/youtube.svg"
+                    width="40px;"
+                    alt="youtube"
+                  />
+                </div>
               </v-flex>
             </v-layout>
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <img
-                  @click="goTo('twitter')"
-                  src="../../../../public/img/twitter.svg"
-                  width="40px;"
-                  alt="twitter"
-                />
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                  <img
+                    class="svg-icon"
+                    @click="goTo('twitter')"
+                    src="../../../../public/img/twitter.svg"
+                    width="40px;"
+                    alt="twitter"
+                  />
+                </div>
               </v-flex>
             </v-layout>
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <img
-                  @click="goTo('linkedin')"
-                  src="../../../../public/img/linkedin.svg"
-                  width="40px;"
-                  alt="linkedin"
-                />
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                  <img
+                    class="svg-icon"
+                    @click="goTo('linkedin')"
+                    src="../../../../public/img/linkedin.svg"
+                    width="40px;"
+                    alt="linkedin"
+                  />
+                </div>
               </v-flex>
             </v-layout>
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <img
-                  @click="goTo('facebook')"
-                  src="../../../../public/img/facebook.svg"
-                  width="40px;"
-                  alt="facebok"
-                />
+                <div
+                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px; mouse:pointer;"
+                  class="white--text"
+                >
+                  <img
+                    @click="goTo('facebook')"
+                    src="../../../../public/img/facebook.svg"
+                    width="40px;"
+                    alt="facebok"
+                    class="svg-icon"
+                  />
+                </div>
               </v-flex>
             </v-layout>
           </v-card-text>
@@ -196,20 +220,20 @@ export default {
 /* ANIMACIONES DE ENTRADA */
 
 .slide-in-bottom-1 {
+  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-bottom-2 {
   -webkit-animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-.slide-in-bottom-2 {
-  -webkit-animation: slide-in-bottom 4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-bottom 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 .slide-in-bottom-3 {
-  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -267,5 +291,25 @@ export default {
   border-block-start: none;
   border-color: #d2d4dc;
   border-width: 2px;
+}
+
+.noPadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.v-text-field.v-text-field--solo .v-input__control {
+  padding: 0;
+  min-height: 35px;
+}
+
+@media (max-width: 992px) {
+  .hideOnLargeScreen {
+    display: none !important;
+  }
+}
+
+.svg-icon {
+  filter: invert(100%);
 }
 </style>
