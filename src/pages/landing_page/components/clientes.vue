@@ -4,7 +4,7 @@
       <div class="md-layout-item md-size-100">
         <br />
         <br />
-        <div class="md-layout">
+        <div class="md-layout switchClientes">
           <div class="md-layout-item md-size-100">
             <div class="checkForm pull-left fade-in-fwd">
               <div class="checkCircle slide-in-left"></div>
@@ -19,109 +19,125 @@
         </div>
         <br />
         <br />
+
         <div class="md-layout">
-          <div class="md-layout-item md-size-30 fade-in-fwd">
-            <img src="../../../../public/img/mapa.png" alt="map" />
+          <div
+            class="md-layout-item md-size-30 md-medium-size-30 md-large-size-30 md-xlarge-size-40 fade-in-fwd mapImg"
+          >
+            <center>
+              <img src="../../../../public/img/mapa.png" alt="map" />
+            </center>
           </div>
-          <div class="md-layout-item md-size-20 slide-in-left2">
-            <br />
-            <br />
-            <div class="md-layout">
-              <div class="md-layout-item md-size-100">
-                <center>
-                  <span class="title titleColor font-weight-black">
-                    <b>Países</b>
-                  </span>
-                  <br />
-                  <span class="display-3 font-weight-black numbersColor">
-                    <animated-number :value="4"></animated-number>
-                  </span>
-                </center>
-              </div>
-            </div>
-            <br />
-            <div class="md-layout">
-              <div class="md-layout-item md-size-100">
-                <center>
-                  <span class="title titleColor font-weight-black">
-                    <b>Clientes</b>
-                  </span>
-                  <br />
-                  <span class="display-3 font-weight-black numbersColor">
-                    <animated-number :value="250"></animated-number>
-                  </span>
-                </center>
-              </div>
-            </div>
-            <br />
-            <div class="md-layout">
-              <div class="md-layout-item md-size-100">
-                <center>
-                  <span class="title titleColor font-weight-black">
-                    <b>Usuarios</b>
-                  </span>
-                  <br />
-                  <span class="display-3 font-weight-black numbersColor">
-                    <animated-number :value="1250"></animated-number>
-                  </span>
-                </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="md-layout-item md-size-50 fade-in-fwd" style="margin-top: 4%">
-            <span
-              class="headline font-weight-thin"
-              style="color:black;"
-            >Nuestros clientes nos definen</span>
-            <br />
-            <span
-              class="display-1 font-weight-light"
-              style="color:black;"
-            >Somos el software de la industria creativa</span>
-
-            <br />
-            <div class="commentsCarousel">
-              <v-carousel
-                height="250"
-                width="344"
-                hide-delimiter-background
-                show-arrows-on-hover
-                :interval="2000"
-              >
-                <v-carousel-item v-for="(slide, i) in slides" :key="i">
-                  <v-sheet color="white" height="100%">
+          <div
+            class="md-layout-item md-size-20 md-medium-size-20 md-large-size-20 md-xlarge-size-20 clientsCount"
+          >
+            <center>
+              <br />
+              <br />
+              <div class="md-layout">
+                <div class="md-layout-item md-size-100 slide-in-left2">
+                  <center>
+                    <span class="title titleColor font-weight-black">
+                      <b>Países</b>
+                    </span>
                     <br />
-                    <v-layout>
-                      <v-flex>
-                        <span>
-                          <div class="subtitle-1 black--text font-italic font-weight-light">
-                            <b>"Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes"</b>
-                          </div>
-                        </span>
+                    <span class="display-3 font-weight-black numbersColor">
+                      <animated-number :value="4"></animated-number>
+                    </span>
+                  </center>
+                </div>
+              </div>
+              <br />
+              <div class="md-layout">
+                <div class="md-layout-item md-size-100 slide-in-left3">
+                  <center>
+                    <span class="title titleColor font-weight-black">
+                      <b>Clientes</b>
+                    </span>
+                    <br />
+                    <span class="display-3 font-weight-black numbersColor">
+                      <animated-number :value="250"></animated-number>
+                    </span>
+                  </center>
+                </div>
+              </div>
+              <br />
+              <div class="md-layout">
+                <div class="md-layout-item md-size-100 slide-in-left4">
+                  <center>
+                    <span class="title titleColor font-weight-black">
+                      <b>Usuarios</b>
+                    </span>
+                    <br />
+                    <span class="display-3 font-weight-black numbersColor">
+                      <animated-number :value="1250"></animated-number>
+                    </span>
+                  </center>
+                </div>
+              </div>
+            </center>
+          </div>
 
-                        <br />
-                        <div class="subtitle-1 black--text font-weight-black">
-                          <b>Andres Paucay - Shangri LA.</b>
-                        </div>
-                      </v-flex>
-                    </v-layout>
-                  </v-sheet>
-                </v-carousel-item>
-              </v-carousel>
-            </div>
+          <div
+            class="md-layout-item md-size-40 md-small-size-100 md-medium-size-40 md-large-size-40 md-xlarge-size-40 fade-in-fwd commetsCard"
+            style="margin-top: 4%"
+          >
+            <center>
+              <span
+                class="headline font-weight-thin"
+                style="color:black;"
+              >Nuestros clientes nos definen</span>
+              <br />
+              <span
+                class="display-1 font-weight-light"
+                style="color:black;"
+              >Somos el software de la industria creativa</span>
+
+              <br />
+              <div class="commentsCarousel">
+                <v-carousel
+                  height="250"
+                  width="344"
+                  hide-delimiter-background
+                  show-arrows-on-hover
+                  :interval="2000"
+                >
+                  <v-carousel-item v-for="(slide, i) in slides" :key="i">
+                    <v-sheet color="white" height="100%">
+                      <br />
+                      <v-layout>
+                        <v-flex>
+                          <span>
+                            <div class="subtitle-1 black--text font-italic font-weight-light">
+                              <b>"Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes"</b>
+                            </div>
+                          </span>
+
+                          <br />
+                          <div class="subtitle-1 black--text font-weight-black">
+                            <b>Andres Paucay - Shangri LA.</b>
+                          </div>
+                        </v-flex>
+                      </v-layout>
+                    </v-sheet>
+                  </v-carousel-item>
+                </v-carousel>
+              </div>
+            </center>
           </div>
         </div>
 
         <div class="md-layout">
-          <div class="md-layout-item md-size-100 slide-in-left3">
+          <div
+            class="md-layout-item md-size-100 md-medium-size-100 md-large-size-100 md-xlarge-size-100 slide-in-left3 usersCarousel"
+          >
             <v-carousel
-              height="165"
+              height="100%"
               width="344"
               :hide-delimiters="true"
               :hide-delimiter-background="true"
-              :interval="2000"
-              style="margin-top: -9%;"
+              :interval="4500"
+              class="userCarouselClass"
             >
               <v-carousel-item>
                 <v-sheet color="white" height="100%">
@@ -370,7 +386,7 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 .checkForm {
   width: 250px;
   height: 80px;
@@ -428,6 +444,18 @@ export default {
   display: none;
 }
 
+.userCarouselClass {
+  .v-carousel__prev {
+    display: block !important;
+    margin-top: 5%;
+  }
+
+  .v-carousel__next {
+    display: block !important;
+    margin-top: 5%;
+  }
+}
+
 .imgClass {
   width: 80px;
   height: 80px;
@@ -482,9 +510,8 @@ export default {
 /* ANIMACION DE ENTRADA DE SWITCH (BOLITA) */
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-left 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-in-left2 {
@@ -495,6 +522,16 @@ export default {
 .slide-in-left3 {
   -webkit-animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left4 {
+  -webkit-animation: slide-in-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left5 {
+  -webkit-animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -531,6 +568,30 @@ export default {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.usersCarousel {
+  margin-top: -7%;
+}
+
+@media (max-width: 992px) {
+  .switchClientes {
+    display: none !important;
+  }
+  .mapImg {
+    display: none !important;
+  }
+
+  .clientsCount {
+    display: none !important;
+  }
+
+  .usersCarousel {
+    .v-carousel {
+      height: 90% !important;
+    }
+    margin-top: 0 !important;
   }
 }
 </style>

@@ -16,8 +16,7 @@
 
     <div class="main-panel">
       <md-content @scroll.native="handleScroll($event)" style="z-index:1000;">
-        <top-navbar></top-navbar>
-        <div>
+        <div style="globalDiv">
           <zoom-center-transition :duration="200" mode="out-in">
             <!-- your content here -->
             <router-view></router-view>
@@ -143,5 +142,8 @@ $scaleSize: 0.95;
 
 .body {
   font-family: Helvetica !important;
+}
+
+.globalDiv {
 }
 </style>

@@ -41,7 +41,7 @@
           <v-container>
             <div class="md-layout">
               <div
-                class="md-layout-item md-size-40 md-small-size-100"
+                class="md-layout-item md-size-40 md-small-size-100 primeraCard"
                 style="margin-left: -7%;margin-top: -10%;"
               >
                 <v-card
@@ -65,15 +65,15 @@
                         <br />
                         <br />
                         <span
-                          class="body-2"
-                        >Me gustan las sopaipillas con un poco de mostaza o tambien con pebre.</span>
+                          class="body-1"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
                       </div>
                     </div>
                   </v-card-text>
                 </v-card>
               </div>
               <div
-                class="md-layout-item md-size-40 md-small-size-100"
+                class="md-layout-item md-size-40 md-small-size-100 segundaCard"
                 style="margin-left: -7%; margin-top: -10%;"
               >
                 <v-card
@@ -97,8 +97,8 @@
                         <br />
                         <br />
                         <span
-                          class="body-2"
-                        >Me gustan las sopaipillas con un poco de mostaza o tambien con pebre.</span>
+                          class="body-1"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -110,7 +110,10 @@
           <!-- SEGUNDA FILA DE CARDS (CANTIDAD: 3) -->
           <v-container>
             <div class="md-layout">
-              <div class="md-layout-item md-size-40 md-small-size-100" style="margin-left: -7%;">
+              <div
+                class="md-layout-item md-size-40 md-small-size-100 terceraCard"
+                style="margin-left: -7%;"
+              >
                 <v-card
                   class="mx-auto fade-in slide-in-bottom3s cardMargin"
                   max-width="320"
@@ -132,14 +135,17 @@
                         <br />
                         <br />
                         <span
-                          class="body-2"
-                        >Me gustan las sopaipillas con un poco de mostaza o tambien con pebre.</span>
+                          class="body-1"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
                       </div>
                     </div>
                   </v-card-text>
                 </v-card>
               </div>
-              <div class="md-layout-item md-size-40 md-small-size-100" style="margin-left: -7%;">
+              <div
+                class="md-layout-item md-size-40 md-small-size-100 cuartaCard"
+                style="margin-left: -7%;"
+              >
                 <v-card
                   class="mx-auto fade-in slide-in-bottom4s cardMargin"
                   max-width="320"
@@ -161,15 +167,18 @@
                         <br />
                         <br />
                         <span
-                          class="body-2"
-                        >Me gustan las sopaipillas con un poco de mostaza o tambien con pebre.</span>
+                          class="body-1"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
                       </div>
                     </div>
                   </v-card-text>
                 </v-card>
               </div>
 
-              <div class="md-layout-item md-size-40 md-small-size-100" style="margin-left: -7%;">
+              <div
+                class="md-layout-item md-size-40 md-small-size-100 quintaCard"
+                style="margin-left: -7%;"
+              >
                 <v-card
                   class="mx-auto fade-in slide-in-bottom5s cardMargin"
                   max-width="320"
@@ -191,8 +200,8 @@
                         <br />
                         <br />
                         <span
-                          class="body-2"
-                        >Me gustan las sopaipillas con un poco de mostaza o tambien con pebre.</span>
+                          class="body-1"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -204,7 +213,7 @@
       </div>
 
       <!-- BUTTOM MORE FEAUTRES -->
-      <div class="md-layout">
+      <!-- <div class="md-layout moreFeaturesButton">
         <div class="md-layout-item md-size-50 pull-right"></div>
         <div
           class="md-layout-item md-size-50 pull-right slide-in-left"
@@ -219,7 +228,7 @@
             <span class="white--text display-3">+</span>
           </v-avatar>
         </div>
-      </div>
+      </div>-->
     </div>
     <div style="display:contents;" class="mobileClass"></div>
   </div>
@@ -241,6 +250,7 @@ export default {
   position: absolute;
   height: 100% !important;
   width: 100% !important;
+  top: 2.5%;
   padding: 2px;
   right: -1%;
   float: right;
@@ -250,12 +260,12 @@ export default {
   top: 0;
   bottom: 0;
   right: -32%;
-  width: 700px;
+  width: 1000px;
 }
 .firstTape {
   margin: auto;
   height: 40px;
-  width: 700px;
+  width: 1000px;
   opacity: none;
   border-radius: 50px;
 
@@ -575,9 +585,29 @@ export default {
     margin-top: 5% !important;
   }
 
-  .desktopClass {
+  .primeraCard {
+    margin-top: 10% !important;
+  }
+  .segundaCard {
+    margin-top: 2% !important;
+  }
+  .terceraCard {
+    margin-top: 2% !important;
+  }
+  .cuartaCard {
     display: none;
   }
+  .quintaCard {
+    display: none;
+  }
+
+  .moreFeaturesButton {
+    display: none !important;
+  }
+
+  // .desktopClass {
+  //   display: none;
+  // }
 }
 
 // ENTRADA DE LA ANIMACION DE EL BUTTOM DE MAS CARACTERISTICAS

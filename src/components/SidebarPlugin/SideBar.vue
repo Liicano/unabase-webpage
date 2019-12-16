@@ -31,6 +31,10 @@
           <div id="scrollDiv" class="force-overflow">
             <div id="somos_2" style="height: 100vh !important;"></div>
             <div id="mira_el_video_2" style="height: 100vh !important;"></div>
+            <div id="smart_budget" style="height: 100vh !important;"></div>
+            <div id="caracteristicas" style="height: 100vh !important;"></div>
+            <div id="clientes" style="height: 100vh !important;"></div>
+            <div id="contacto" style="height: 100vh !important;"></div>
           </div>
         </div>
       </div>
@@ -183,6 +187,7 @@ export default {
         this.thumbColor = classColor;
       }
       this.changeSectionState(section);
+
       $(".scrollContainer").scrollTop(n);
     }
   },
@@ -258,7 +263,7 @@ export default {
 
 .scrollContainer::-webkit-scrollbar-track {
   border-radius: 20px !important;
-  background-color: #f5f5f5;
+  background-color: #dfdede;
 }
 
 .scrollContainer::-webkit-scrollbar {

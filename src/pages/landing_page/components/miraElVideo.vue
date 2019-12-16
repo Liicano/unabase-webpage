@@ -1,12 +1,14 @@
 <template>
   <div style="heigth: 100vh;">
     <div class="md-layout">
-      <div class="md-layout-item md-size-100">
+      <div
+        class="md-layout-item md-size-100 md-medium-size-100 md-large-size-100 md-xlarge-size-90"
+      >
         <div class="player_overlay">
           <video
             width="400"
             controls
-            poster="../../../../public/video/video_presentation.png"
+            poster="../../../../public/img/video_tape.png"
             preload="none"
             onclick="this.play()"
           >
