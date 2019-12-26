@@ -16,6 +16,7 @@
 
     <div class="main-panel">
       <md-content @scroll.native="handleScroll($event)" style="z-index:1000;">
+        <top-navbar></top-navbar>
         <div style="globalDiv">
           <zoom-center-transition :duration="200" mode="out-in">
             <!-- your content here -->

@@ -4,17 +4,49 @@
       <div
         class="md-layout-item md-size-100 md-small-hide md-medium-size-100 md-large-size-100 md-xlarge-size-90"
       >
-        <center>
-          <v-container>
-            <center>
-              <img
-                class="animationGift"
-                src="../../../../public/img/smart_budget.gif"
-                alt="smart_animation"
-              />
-            </center>
-          </v-container>
-        </center>
+        <v-layout class="text-left" style="margin-top: 5% !important;">
+          <v-flex class="text-left">
+            <v-layout>
+              <v-flex class="md2 xs2 sm2 text-center" style="padding-top: 2.5%;">
+                <center>
+                  <div class="cilinder">
+                    <div class="cilinder_ball"></div>
+
+                    <div class="cilinder_2">
+                      <div class="cilinder_ball_2"></div>
+                    </div>
+
+                    <div class="cilinder_3">
+                      <div class="cilinder_ball_3"></div>
+                    </div>
+                  </div>
+                </center>
+              </v-flex>
+              <v-flex class="md10 xs10 sm10 text-left">
+                <span class="headline">¿Por qué</span>
+                <br />
+                <span class="headline font-weight-black">Smart Budget?</span>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
+
+        <v-layout style="margin-top: -5%;">
+          <v-flex>
+            <v-container>
+              <center v-for="i in rangeFor(30, 299)" :key="i">
+                <img
+                  v-if="current == i"
+                  id="animationGift"
+                  class="animationGift"
+                  :src="getImgSrc(i)"
+                  alt="animatedImg"
+                  @load="loadedFunc(i)"
+                />
+              </center>
+            </v-container>
+          </v-flex>
+        </v-layout>
       </div>
     </div>
 
@@ -73,21 +105,66 @@
 <script>
 export default {
   data() {
-    return {};
+    return { current: 30, loaded: true };
   },
   components: {},
-  methods: {},
+  methods: {
+    zeroPad(num) {
+      if (num < 10) {
+        return String(num).padStart(5, "0");
+      } else if (num > 10 && num < 100) {
+        return String(num).padStart(5, "0");
+      } else {
+        return String(num).padStart(5, "0");
+      }
+    },
+
+    rangeFor(start, end) {
+      return Array(end - start + 1)
+        .fill()
+        .map((_, idx) => start + idx);
+    },
+
+    loadedFunc() {
+      this.loaded = true;
+    },
+
+    getImgSrc(i) {
+      this.setCurrent(i);
+
+      if (this.loaded) {
+        return require("../../../assets/animation_sequence/smartbudget_contexto_" +
+          this.zeroPad(i) +
+          ".png");
+      } else {
+        return require("../../../assets/animation_sequence/smartbudget_contexto_" +
+          this.zeroPad(i - 1) +
+          ".png");
+      }
+    },
+    setCurrent(i) {
+      let a = null;
+      if (this.current == 185) {
+        console.log("Fin de la animaciòn");
+        clearTimeout(a);
+      } else {
+        a = setTimeout(() => {
+          i < 299 ? (this.current = i + 1) : (this.current = 299);
+
+          this.loaded = false;
+        }, 50);
+      }
+    }
+  },
   created() {},
   mounted() {}
 };
 </script>
 
-
-
 <style>
 .animationGift {
   height: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
   background: transparent !important;
 }
 .animationMobile {
@@ -288,5 +365,60 @@ export default {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.cilinder {
+  width: 50px;
+  height: 13px;
+  border-radius: 25%;
+  background: #34cc02;
+  transform: rotate(-45deg);
+}
+
+.cilinder_ball {
+  width: 12px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  float: right;
+}
+
+.cilinder_2 {
+  width: 37px;
+  height: 13px;
+  border-radius: 30%;
+  background: #34cc02;
+  transform: rotate(90deg);
+  float: right;
+  margin-right: -24px;
+  margin-top: 12px;
+}
+
+.cilinder_ball_2 {
+  width: 12px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  float: left;
+}
+
+.cilinder_3 {
+  margin-right: -63px;
+  margin-top: 25px;
+  width: 50px;
+  height: 13px;
+  border-radius: 30%;
+  background: #34cc02;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  float: right;
+}
+
+.cilinder_ball_3 {
+  width: 12px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  float: right;
 }
 </style>

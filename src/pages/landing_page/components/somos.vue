@@ -16,14 +16,20 @@
               </span>
               <br />
               <span class="title font-weight-light">
-                <b>Somos el software de control financiero más usado por la industria creativa.</b>
+                <b>
+                  Somos el software de control financiero más usado por la
+                  industria creativa.
+                </b>
               </span>
 
               <br />
               <br />
-              <div
-                class="body-2 font-weight-light"
-              >Con unabase puedes proyectar los costos, saber cual es el valor de tu proyecto, estar al tanto de los gastos reales, saber en que lineas estuviste bien y en cuales no tanto. Nos preocupamos de la visibilidad y utilidad de tu negocio.</div>
+              <div class="body-2 font-weight-light">
+                Con unabase puedes proyectar los costos, saber cual es el valor
+                de tu proyecto, estar al tanto de los gastos reales, saber en
+                que lineas estuviste bien y en cuales no tanto. Nos preocupamos
+                de la visibilidad y utilidad de tu negocio.
+              </div>
             </v-card-text>
             <v-card-actions style="z-index:1000 !important; margin-top: -3%;">
               <v-btn

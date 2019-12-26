@@ -55,7 +55,7 @@ export default {
         start: 0,
         dir: "v",
         loop: false,
-        duration: 100,
+        duration: 50,
         beforeChange: function(el, prev, next) {
           console.log("before", prev, next);
           this.vm.setSectionOnScroll(next);
@@ -93,7 +93,6 @@ export default {
   mounted() {},
   watch: {
     getSectionState(val) {
-      console.warn("getSectionState -> ", val);
       this.sectionState = val;
       this.$refs.example.$fullpage.moveTo(val);
     },
@@ -108,48 +107,36 @@ export default {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .mira_el_video {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .smart_budget {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .caracteristicas {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .clientes {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .contacto {
   height: 100vh !important;
   width: 100% !important;
   background: white;
-  border-bottom-style: groove !important;
-  border-bottom: grey;
 }
 
 .fullpage-container {

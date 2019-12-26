@@ -4,11 +4,23 @@
       <div
         class="md-layout-item md-size-100 md-medium-size-100 md-large-size-100 md-xlarge-size-90"
       >
-        <div class="player_overlay">
+        <div class="player_overlay desktopVideo">
           <video
             width="400"
             controls
-            poster="../../../../public/img/video_tape.png"
+            poster="../../../../public/img/video_placeholder_desktop.png"
+            preload="none"
+            onclick="this.play()"
+          >
+            <source src="../../../../public/video/presentation.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div class="player_overlay mobileVideo">
+          <video
+            width="400"
+            controls
+            poster="../../../../public/img/video_placeholder_mobile.png"
             preload="none"
             onclick="this.play()"
           >
@@ -43,6 +55,10 @@ video {
   .player_overlay {
     margin-top: 10%;
   }
+
+  .mobileVideo {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -53,6 +69,10 @@ video {
     width: 100%;
     height: 100%;
     background-color: white;
+  }
+
+  .desktopVideo {
+    display: none;
   }
 }
 </style>
