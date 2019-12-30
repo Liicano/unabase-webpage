@@ -6,7 +6,9 @@
       >
         <div class="player_overlay desktopVideo">
           <video
-            width="400"
+            width="100%"
+            height="100%"
+            class="myVideo"
             controls
             poster="../../../../public/img/video_placeholder_desktop.png"
             preload="none"

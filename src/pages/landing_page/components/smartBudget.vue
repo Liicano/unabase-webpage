@@ -7,7 +7,10 @@
         <v-layout class="text-left" style="margin-top: 5% !important;">
           <v-flex class="text-left">
             <v-layout>
-              <v-flex class="md2 xs2 sm2 text-center" style="padding-top: 2.5%;">
+              <v-flex
+                class="md2 xs2 sm2 text-center"
+                style="padding-top: 2.5%;"
+              >
                 <center>
                   <div class="cilinder">
                     <div class="cilinder_ball"></div>
@@ -54,45 +57,59 @@
           <v-timeline align-top dense>
             <v-timeline-item color="pink" small class="timeLineItem_1">
               <v-layout class="pt-1">
-                <v-flex>
+                <v-flex style="margin-top: 10%;">
                   <strong>
                     <b>Visualizacion de todas tus lineas de proyectos</b>
                   </strong>
-                  <div class="caption">Todos tus gastos pasados y futuros en un solo lugar.</div>
+                  <div class="caption">
+                    Todos tus gastos pasados y futuros en un solo lugar.
+                  </div>
                 </v-flex>
               </v-layout>
             </v-timeline-item>
 
-            <v-timeline-item color="teal lighten-3" small class="timeLineItem_2">
+            <v-timeline-item
+              color="teal lighten-3"
+              small
+              class="timeLineItem_2"
+            >
               <v-layout class="pt-1">
-                <v-flex>
+                <v-flex style="margin-top: 10%;">
                   <strong>
                     <b>Control de gastos y utilidades</b>
                   </strong>
-                  <div class="caption mb-2">Maneja tu dinero categorizando tus transacciones.</div>
-                  <v-avatar>
+                  <div class="caption mb-2">
+                    Maneja tu dinero categorizando tus transacciones.
+                  </div>
+                  <!-- <v-avatar>
                     <v-img
                       src="https://image.freepik.com/vector-gratis/diseno-fondo-ahorros_1270-10.jpg"
                     ></v-img>
-                  </v-avatar>
+                  </v-avatar>-->
                 </v-flex>
               </v-layout>
             </v-timeline-item>
 
             <v-timeline-item color="pink" small class="timeLineItem_3">
               <v-layout class="pt-1">
-                <v-flex>
+                <v-flex style="margin-top: 10%;">
                   <strong>
                     <b>Crecimiento, futuro y proyección</b>
                   </strong>
-                  <div class="caption mb-2">Crece y alcanza tus metas a futuro.</div>
+                  <div class="caption mb-2">
+                    Crece y alcanza tus metas a futuro.
+                  </div>
                 </v-flex>
               </v-layout>
             </v-timeline-item>
 
-            <!-- <v-timeline-item>
-              <img class="unaLogoTimeline" src="../../../../public/img/logo_solo.png" alt="unaLogo" />
-            </v-timeline-item>-->
+            <!-- <v-timeline-item small color="white" class="logoUna">
+              <img
+                class="unaLogoTimeline"
+                src="../../../../public/img/logo_solo.png"
+                alt="unaLogo"
+              />
+            </v-timeline-item> -->
           </v-timeline>
         </v-container>
       </div>
@@ -181,21 +198,21 @@ export default {
   }
 
   .timeLineItem_1 {
-    margin-top: 25% !important;
+    margin-top: 20% !important;
     -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .timeLineItem_2 {
-    margin-top: 25% !important;
+    margin-top: 20% !important;
     -webkit-animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .timeLineItem_3 {
-    margin-top: 25% !important;
+    margin-top: 20% !important;
     -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -211,21 +228,58 @@ export default {
   }
 
   .theme--light.v-timeline .v-timeline-item__dot {
-    margin-left: 1.5%;
+    margin-left: 2.5%;
+    height: 85px !important;
+    width: 20px !important;
+    margin-top: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: none;
   }
 
-  .v-timeline-item__dot--small .v-timeline-item__inner-dot {
+  .timeLineItem_1 > .v-timeline-item__dot--small .v-timeline-item__inner-dot {
     background: #f9bd00 !important;
+    height: 80px !important;
+    width: 15px !important;
+    margin-top: 2px !important;
+    border-radius: 20px !important;
     -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
+  .timeLineItem_2 > .v-timeline-item__dot--small .v-timeline-item__inner-dot {
+    background: #03d6f9 !important;
+    height: 80px !important;
+    width: 15px !important;
+    margin-top: 2px !important;
+    border-radius: 20px !important;
+    -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .timeLineItem_3 > .v-timeline-item__dot--small .v-timeline-item__inner-dot {
+    background: #fc4903 !important;
+    height: 80px !important;
+    width: 15px !important;
+    margin-top: 2px !important;
+    border-radius: 20px !important;
+    -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  /* .logoUna > .theme--light.v-timeline .v-timeline-item__dot {
+    background: #34cc02 !important;
+    height: 0 !important;
+  } */
+
   .unaLogoTimeline {
-    margin-top: -1% !important;
-    width: 50px !important;
-    height: 50px !important;
-    margin-left: -63px !important;
+    margin-top: 4% !important;
+    width: 55px !important;
+    height: 55px !important;
+    z-index: 0 !important;
+    margin-left: -66.5px !important;
     -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }

@@ -1,33 +1,34 @@
 <template>
   <div style="heigth: 100vh;">
-    <v-container>
+    <v-container style="padding:0;">
       <div class="principalContainer md-layout" style="heigth: 100vh !important;">
         <div
           class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-right text-right"
+          style="margin-top: 80%"
         >
           <v-card
             class="mx-auto fade-in"
-            max-width="544"
-            style="margin-top: 25%; box-shadow: none; z-index:0 !important; margin-right: -10% !important;"
+            max-width="844"
+            style="position: fixed !important; bottom: 55px !important; left: 0 !important; right: 0 !important;"
           >
             <v-card-text style="z-index:1000 !important;">
-              <span class="display-1 text--primary">
+              <span class="title text--primary">
                 <b>{{text.title}}</b>
               </span>
               <br />
-              <span class="title font-weight-light">
+              <span class="subtitle-1 font-weight-light">
                 <b>{{text.subheader}}</b>
               </span>
 
               <br />
               <br />
-              <div class="body-2 font-weight-light">{{text.text}}</div>
+              <div class="subtitle-2 font-weight-light">{{text.text}}</div>
             </v-card-text>
             <v-card-actions style="z-index:1000 !important; margin-top: -3%;">
               <v-btn
                 dark
                 flat
-                class="black--text font-weight-black title"
+                class="black--text font-weight-black subtitle-2"
                 style="cursor:pointer;z-index:1000 !important;"
                 tile
                 @click="goToDemo()"
@@ -43,42 +44,42 @@
           class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-left"
           style="height: 100vh; padding: 0 !important;"
         >
-          <div class="animatedContainer_medium_small pull-left">
+          <div class="animatedContainer_mobile pull-left">
             <center>
               <v-container style="padding: 0 !important; margin:0 !important;">
                 <!--Barra izquierda width menos de lo normal alado de la normal (verde)-->
-                <div class="container7 slide-in-top">
-                  <div class="tape7"></div>
+                <div class="container7_mobile slide-in-top">
+                  <div class="tape7_mobile"></div>
                 </div>
 
                 <!--Barra izquierda width normal alado de la super fina (amarilla)-->
-                <div class="container6 slide-in-top3">
-                  <div class="tape6"></div>
+                <div class="container6_mobile slide-in-top3">
+                  <div class="tape6_mobile"></div>
                 </div>
 
                 <!--Barra izquierda super fina alado de la ancha-->
-                <div class="container5 slide-in-top">
-                  <div class="tape5"></div>
+                <div class="container5_mobile slide-in-top">
+                  <div class="tape5_mobile"></div>
                 </div>
 
                 <!--Barra izquierda ancha-->
-                <div class="container4 slide-in-top3">
-                  <div class="tape4"></div>
+                <div class="container4_mobile slide-in-top3">
+                  <div class="tape4_mobile"></div>
                 </div>
 
                 <!--barra verde-->
-                <div class="container1 slide-in-top">
-                  <div class="tape1"></div>
+                <div class="container1_mobile slide-in-top">
+                  <div class="tape1_mobile"></div>
                   <!--bolita verde-->
-                  <div class="container2">
-                    <div class="tape2"></div>
+                  <div class="container2_mobile">
+                    <div class="tape2_mobile"></div>
                   </div>
 
                   <!-- CONTANEDOR DE LA V DE UNABASE -->
                   <div class="v-container-all">
                     <!-- v de unabase lado derecho-->
-                    <div class="container-v slide-in-top">
-                      <div class="tape-v"></div>
+                    <div class="container-v_mobile slide-in-top">
+                      <div class="tape-v_mobile"></div>
                     </div>
 
                     <!-- v de unabase lado izquierdo-->
@@ -89,23 +90,23 @@
                 </div>
 
                 <!--barra finita derecha-->
-                <div class="container3 slide-in-top2">
-                  <div class="tape3"></div>
+                <div class="container3_mobile slide-in-top2">
+                  <div class="tape3_mobile"></div>
                 </div>
 
                 <!--Barra derecha segunda derecha-->
-                <div class="container8 slide-in-top">
-                  <div class="tape8"></div>
+                <div class="container8_mobile slide-in-top">
+                  <div class="tape8_mobile"></div>
                 </div>
 
                 <!--Barra derecha tercera derecha-->
-                <div class="container9 slide-in-top">
-                  <div class="tape9"></div>
+                <div class="container9_mobile slide-in-top">
+                  <div class="tape9_mobile"></div>
                 </div>
 
                 <!--Barra derecha cuarta derecha-->
-                <div class="container10 slide-in-top2">
-                  <div class="tape10"></div>
+                <div class="container10_mobile slide-in-top2">
+                  <div class="tape10_mobile"></div>
                 </div>
               </v-container>
             </center>
@@ -140,12 +141,17 @@ export default {
 .principalContainer {
 }
 
-.animatedContainer_medium_small {
+.animatedContainer_mobile {
   height: 100vh !important;
   width: 100% !important;
-  padding: 10%;
-  margin-top: -30%;
-  margin-left: -30%;
+  padding-top: 10%;
+  padding-left: 0;
+  padding-right: 10%;
+  position: fixed;
+  top: -1%;
+  right: 5;
+  /* margin-top: -100%;
+  margin-left: -10%; */
 }
 /* ================================ */
 /* ENTRADA ANIMACION # 1 */
@@ -199,7 +205,7 @@ export default {
   right: 25%; */
 }
 
-.container1 {
+.container1_mobile {
   position: relative;
   top: -3%;
   bottom: 0;
@@ -209,7 +215,7 @@ export default {
   width: 40px;
 }
 
-.container4 {
+.container4_mobile {
   position: relative;
   top: 0;
   width: 60px;
@@ -218,7 +224,7 @@ export default {
   right: 0;
 }
 
-.container5 {
+.container5_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -227,16 +233,16 @@ export default {
   width: 10px;
 }
 
-.tape5 {
+.tape5_mobile {
   margin: auto;
-  height: 115px;
+  height: 90px;
   width: 10px;
   opacity: 0.8;
   border-radius: 50px;
   background: red;
 }
 
-.container3 {
+.container3_mobile {
   position: relative;
   /* top: 0;
   bottom: 0;
@@ -245,7 +251,7 @@ export default {
   right: 0;
 }
 
-.container2 {
+.container2_mobile {
   /* position: relative;
   margin-top: -100%; */
   position: absolute;
@@ -257,7 +263,7 @@ export default {
   width: 40px;
 }
 
-.container6 {
+.container6_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -265,16 +271,16 @@ export default {
   right: 0;
   width: 40px;
 }
-.tape6 {
+.tape6_mobile {
   margin: auto;
-  height: 165px;
+  height: 120px;
   width: 40px;
   opacity: 0.8;
   border-radius: 50px;
   background: #f9bd00;
 }
 
-.container7 {
+.container7_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -282,16 +288,16 @@ export default {
   right: 0;
   width: 20px;
 }
-.tape7 {
+.tape7_mobile {
   margin: auto;
-  height: 100px;
+  height: 50px;
   width: 20px;
   opacity: 0.8;
   border-radius: 50px;
   background: #34cc02;
 }
 
-.container8 {
+.container8_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -299,16 +305,16 @@ export default {
   /* right: 0; */
   width: 40px;
 }
-.tape8 {
+.tape8_mobile {
   margin: auto;
-  height: 245px;
+  height: 145px;
   width: 40px;
   opacity: 0.8;
   border-radius: 50px;
   background: red;
 }
 
-.container9 {
+.container9_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -316,16 +322,16 @@ export default {
   /* right: 0; */
   width: 40px;
 }
-.tape9 {
+.tape9_mobile {
   margin: auto;
-  height: 150px;
+  height: 100px;
   width: 40px;
   opacity: 0.8;
   border-radius: 50px;
   background: #03d6f9;
 }
 
-.container10 {
+.container10_mobile {
   position: relative;
   top: 0;
   bottom: 0;
@@ -333,7 +339,7 @@ export default {
   /* right: 0; */
   width: 10px;
 }
-.tape10 {
+.tape10_mobile {
   margin: auto;
   height: 115px;
   width: 10px;
@@ -351,16 +357,16 @@ export default {
 }
 .tape11 {
   margin: auto;
-  height: 115px;
+  height: 100px;
   width: 10px;
   opacity: 0.8;
   border-radius: 50px;
   background: #34cc02;
 }
 
-.tape1 {
+.tape1_mobile {
   margin: auto;
-  height: 400px;
+  height: 250px;
   width: 40px;
   opacity: 0.8;
   border-radius: 50px;
@@ -371,15 +377,15 @@ export default {
     rgba(255, 255, 255, 1) 100%
   );
 }
-.tape4 {
+.tape4_mobile {
   margin: auto;
-  height: 245px;
+  height: 145px;
   width: 60px;
   opacity: 0.8;
   border-radius: 50px;
   background: #03d6f9;
 }
-.tape2 {
+.tape2_mobile {
   margin: auto;
   height: 40px;
   width: 40px;
@@ -388,16 +394,16 @@ export default {
   background: #34cc02;
 }
 
-.tape3 {
+.tape3_mobile {
   margin: auto;
-  height: 200px;
+  height: 100px;
   width: 25px;
   opacity: 0.8;
   border-radius: 50px;
   background: #f9bd00;
 }
 
-.container-v {
+.container-v_mobile {
   position: absolute;
   top: 0%;
   left: -36px;
@@ -405,7 +411,7 @@ export default {
   transform: rotate(-45deg);
 }
 
-.tape-v {
+.tape-v_mobile {
   margin: auto;
   height: 130px;
   width: 45px;
@@ -437,7 +443,7 @@ export default {
 
 .v-container-all {
   position: absolute;
-  margin-top: 15%;
+  margin-top: 5%;
   left: 0px;
 }
 
@@ -561,9 +567,9 @@ export default {
   animation: slide-in-top 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@media (max-width: 992px) {
-  .animatedContainer_medium_small {
+/* @media (max-width: 992px) {
+  .animatedContainer_mobile {
     display: none !important;
   }
-}
+} */
 </style>

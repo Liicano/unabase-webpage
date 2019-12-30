@@ -1,7 +1,179 @@
 <template>
   <div style="heigth: 100vh; margin-top: 10%;">
     <div class="md-layout">
-      <div class="md-layout-item md-size-33 md-small-size-100 slide-in-bottom-3 noPadding">
+      <!-- FORMULARIO EN MOBILE -->
+
+      <div
+        class="md-layout-item md-size-45 md-small-size-100 slide-in-bottom-1 noPadding showOnMobile"
+      >
+        <v-card
+          class="mx-auto fade-in"
+          max-width="100%"
+          style="margin-top: 0%; box-shadow: none; z-index:1000 !important;"
+        >
+          <v-card-text>
+            <center>
+              <span class="headline font-weight-regular pull-center text-center"
+                >Solicita Una Demo</span
+              >
+            </center>
+
+            <v-divider inset></v-divider>
+            <!-- <v-spacer></v-spacer> -->
+
+            <v-layout style="padding-top: 10px;">
+              <v-flex md12 xs12 sm12>
+                <v-text-field
+                  v-model="client.name"
+                  placeholder="Nombre"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+            <v-layout style="padding-top: 0; margin-top: 0;">
+              <v-flex md12 xs12 sm12>
+                <v-text-field
+                  v-model="client.lastName"
+                  placeholder="Apellido"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+
+            <v-layout>
+              <v-flex md12 xs12 sm12>
+                <v-text-field
+                  v-model="client.business"
+                  placeholder="Empresa"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+
+            <v-layout>
+              <v-flex md12 xs12 sm12>
+                <v-text-field
+                  v-model="client.email"
+                  placeholder="Email"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+
+            <v-layout>
+              <v-flex md12 xs12 sm12>
+                <v-text-field
+                  v-model="client.phone"
+                  placeholder="Telefono"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+            <v-layout>
+              <v-flex md6>
+                <v-btn
+                  color="#34cc02"
+                  class="white--text"
+                  dark
+                  block
+                  large
+                  @click="sendMail()"
+                  >Enviar</v-btn
+                >
+              </v-flex>
+            </v-layout>
+          </v-card-text>
+        </v-card>
+      </div>
+
+      <!-- MOSTRAR DATA EN MOBILE -->
+      <div
+        class="md-layout-item md-size-33 md-small-size-100 slide-in-bottom-3 noPadding showOnMobile"
+      >
+        <br />
+        <v-card
+          class="mx-auto fade-in"
+          max-width="100%"
+          style="margin-top: -8%; box-shadow: none; z-index:1000 !important;"
+        >
+          <v-card-text class="borderClass-left">
+            <v-layout>
+              <v-flex>
+                <center>
+                  <span class="headline text--primary ">
+                    <b>Contactanos</b>
+                  </span>
+                  <v-divider inset></v-divider>
+                </center>
+              </v-flex>
+            </v-layout>
+
+            <!-- <v-layout>
+              <v-flex>
+                <span class="subtitle-1 text-right"
+                  >Hablemos y conoce nuestra soluciòn!</span
+                >
+              </v-flex>
+            </v-layout> -->
+            <v-layout>
+              <v-flex>
+                <v-layout>
+                  <v-flex>
+                    <v-layout>
+                      <v-flex>
+                        <div class="headline">Perú</div>
+                        <br />
+
+                        <div class="subtitle-1 pull-left">
+                          +56 9 4810 6304 <br />
+                          +56 9 4810 6304
+                        </div>
+                      </v-flex>
+                    </v-layout>
+                    <v-layout>
+                      <v-flex>
+                        <div class="subheading font-weight-bold pull-left">
+                          <b>ventas@unabase.cl</b>
+                        </div>
+                      </v-flex>
+                    </v-layout>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+
+              <!-- <v-divider vertical></v-divider> -->
+              <v-flex>
+                <v-layout>
+                  <v-flex>
+                    <v-layout>
+                      <v-flex>
+                        <div class="headline text-right">Chile</div>
+                        <br />
+                        <div class="subtitle-1 pull-right">
+                          +56 9 4810 6304 <br />
+                          +56 9 4810 6304
+                        </div>
+                      </v-flex>
+                    </v-layout>
+                    <v-layout>
+                      <v-flex>
+                        <div class="subheading font-weight-bold pull-right">
+                          <b>ventas@unabase.cl</b>
+                        </div>
+                      </v-flex>
+                    </v-layout>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
+          </v-card-text>
+          <v-card-actions style="z-index:1000 !important;"></v-card-actions>
+        </v-card>
+      </div>
+
+      <div
+        class="md-layout-item md-size-33 md-small-size-100 slide-in-bottom-3 noPadding hideOnMobile"
+      >
         <v-card
           class="mx-auto fade-in"
           max-width="344"
@@ -23,7 +195,9 @@
             <div class="display-1 pull-right">Chile</div>
             <br />
             <br />
-            <div class="subtitle-1 pull-right">+56 9 4810 6304 / +56 9 4810 6304</div>
+            <div class="subtitle-1 pull-right">
+              +56 9 4810 6304 / +56 9 4810 6304
+            </div>
 
             <br />
             <br />
@@ -43,7 +217,7 @@
       </div>
 
       <div
-        class="md-layout-item md-size-45 md-small-size-100 slide-in-bottom-1 noPadding hideOnLargeScreen"
+        class="md-layout-item md-size-45 md-small-size-100 slide-in-bottom-1 noPadding hideOnMobile"
       >
         <v-card
           class="mx-auto fade-in"
@@ -51,34 +225,56 @@
           style="margin-top: 15%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text>
-            <span class="display-1 font-weight-regular pull-left">Solicita Una Demo</span>
+            <span class="display-1 font-weight-regular pull-left"
+              >Solicita Una Demo</span
+            >
             <v-spacer></v-spacer>
 
             <br />
             <br />
             <v-layout style="padding-top: 10px;">
-              <v-flex md6 xs6>
-                <v-text-field placeholder="Nombre" solo></v-text-field>
+              <v-flex md6 xs6 sm12>
+                <v-text-field
+                  v-model="client.name"
+                  placeholder="Nombre"
+                  solo
+                ></v-text-field>
               </v-flex>
 
-              <v-flex md6 xs6 style="margin-left: 10px;">
-                <v-text-field placeholder="Apellido" solo></v-text-field>
+              <v-flex md6 xs6 sm12 style="margin-left: 10px;">
+                <v-text-field
+                  v-model="client.lastName"
+                  placeholder="Apellido"
+                  solo
+                ></v-text-field>
+              </v-flex>
+            </v-layout>
+
+            <v-layout>
+              <v-flex md6 xs6 sm12>
+                <v-text-field
+                  v-model="client.business"
+                  placeholder="Empresa"
+                  solo
+                ></v-text-field>
+              </v-flex>
+
+              <v-flex class="md6 xs6 sm12" style="margin-left: 10px;">
+                <v-text-field
+                  v-model="client.email"
+                  placeholder="Email"
+                  solo
+                ></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md6 xs6>
-                <v-text-field placeholder="Empresa" solo></v-text-field>
-              </v-flex>
-
-              <v-flex md6 xs6 style="margin-left: 10px;">
-                <v-text-field placeholder="Email" solo></v-text-field>
-              </v-flex>
-            </v-layout>
-
-            <v-layout>
-              <v-flex md6 xs6>
-                <v-text-field placeholder="Telefono" solo></v-text-field>
+                <v-text-field
+                  v-model="client.phone"
+                  placeholder="Telefono"
+                  solo
+                ></v-text-field>
               </v-flex>
 
               <v-flex md6>
@@ -87,7 +283,14 @@
             </v-layout>
             <v-layout>
               <v-flex md6>
-                <v-btn color="#34cc02" class="white--text" dark large>Enviar</v-btn>
+                <v-btn
+                  color="#34cc02"
+                  class="white--text"
+                  dark
+                  large
+                  @click="sendMail()"
+                  >Enviar</v-btn
+                >
               </v-flex>
             </v-layout>
           </v-card-text>
@@ -95,7 +298,7 @@
       </div>
 
       <div
-        class="md-layout-item md-size-22 md-small-size-100 slide-in-bottom-2 noPadding hideOnLargeScreen"
+        class="md-layout-item md-size-22 md-small-size-100 slide-in-bottom-2 noPadding hideOnMobile"
       >
         <v-card
           class="mx-auto fade-in"
@@ -105,7 +308,9 @@
           <v-card-text class="borderClass-right">
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                <div
+                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
+                >
                   <img
                     color="white"
                     class="svg-icon"
@@ -120,7 +325,9 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                <div
+                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
+                >
                   <img
                     class="svg-icon"
                     @click="goTo('youtube')"
@@ -134,7 +341,9 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                <div
+                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
+                >
                   <img
                     class="svg-icon"
                     @click="goTo('twitter')"
@@ -148,7 +357,9 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
+                <div
+                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
+                >
                   <img
                     class="svg-icon"
                     @click="goTo('linkedin')"
@@ -183,11 +394,19 @@
   </div>
 </template>
 
-
 <script>
+import Swal from "sweetalert2";
 export default {
   data() {
-    return {};
+    return {
+      client: {
+        name: "",
+        lastName: "",
+        business: "",
+        email: "",
+        phone: ""
+      }
+    };
   },
   components: {},
   methods: {
@@ -209,8 +428,36 @@ export default {
         : socialNetwork == "facebook"
         ? window.open("https://www.facebook.com/unabase/", "_blank")
         : console.log("Error, red social no existe!");
+    },
+    async sendMail() {
+      let response = await emailjs.send(
+        "gmail",
+        "template_rHWtBJwg",
+        this.client
+      );
+      console.log("RESPONSE EMAIL!", response.status, response.text);
+
+      Swal.fire({
+        title: "¡Correo enviado con exito!",
+        text: `Gracias por contactarnos, pronto nos comunicaremos contigo.`,
+        type: "success",
+        showCancelButton: false,
+        confirmButtonClass: "md-button md-success",
+        confirmButtonText: "OK!",
+        buttonsStyling: false
+      });
+
+      this.client = {
+        name: "",
+        lastName: "",
+        business: "",
+        email: "",
+        phone: ""
+      };
     }
   },
+  // v=spf1 a mx ptr include:justhost.com ?all
+
   created() {},
   mounted() {}
 };
@@ -304,8 +551,18 @@ export default {
 }
 
 @media (max-width: 992px) {
-  .hideOnLargeScreen {
+  .hideOnMobile {
     display: none !important;
+  }
+}
+
+.showOnMobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .showOnMobile {
+    display: block !important;
   }
 }
 

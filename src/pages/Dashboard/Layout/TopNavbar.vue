@@ -12,7 +12,7 @@
         <img src="../../../../public/img/logo_unabase.png" alt="logo" />
       </div>
       <div class="md-toolbar-section-end">
-        <md-button
+        <!-- <md-button
           class="md-just-icon md-round md-simple md-toolbar-toggle"
           :class="{ toggled: $sidebar.showSidebar }"
           @click="toggleSidebar"
@@ -20,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </md-button>
+        </md-button> -->
 
         <div class="md-collapse">
           <div class="md-autocomplete">
@@ -119,8 +119,7 @@ export default {
 };
 </script>
 
-
-<style >
+<style>
 @media (min-width: 992px) {
   .topNavbar {
     display: none !important;

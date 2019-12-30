@@ -18,6 +18,7 @@
     "@fullcalendar/vue": "4.1.1",
     "@tweenjs/tween.js": "17.4.0",
     "chartist": "0.11.2",
+    "emailjs-com": "^2.4.1",
     "es6-promise": "4.2.6",
     "file-system": "^2.2.2",
     "fullpage-vue": "^1.9.0",

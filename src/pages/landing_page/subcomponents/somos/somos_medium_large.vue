@@ -12,24 +12,16 @@
           >
             <v-card-text style="z-index:1000 !important;">
               <span class="display-1 text--primary">
-                <b>Smart Budget</b>
+                <b>{{text.title}}</b>
               </span>
               <br />
               <span class="title font-weight-light">
-                <b>
-                  Somos el software de control financiero más usado por la
-                  industria creativa.
-                </b>
+                <b>{{text.subheader}}</b>
               </span>
 
               <br />
               <br />
-              <div class="body-2 font-weight-light">
-                Con unabase puedes proyectar los costos, saber cual es el valor
-                de tu proyecto, estar al tanto de los gastos reales, saber en
-                que lineas estuviste bien y en cuales no tanto. Nos preocupamos
-                de la visibilidad y utilidad de tu negocio.
-              </div>
+              <div class="body-2 font-weight-light">{{text.text}}</div>
             </v-card-text>
             <v-card-actions style="z-index:1000 !important; margin-top: -3%;">
               <v-btn
@@ -40,8 +32,8 @@
                 tile
                 @click="goToDemo()"
               >
-                <span class="text-none">Prueba el demo</span>
-                <v-icon center>keyboard_arrow_right</v-icon>
+                <span class="text-none">{{text.button.text}}</span>
+                <v-icon center>{{text.button.icon}}</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -126,6 +118,10 @@
 
 <script>
 export default {
+  props: {
+    text: Object
+  },
+
   data() {
     return {};
   },

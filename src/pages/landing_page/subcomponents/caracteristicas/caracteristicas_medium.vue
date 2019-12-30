@@ -15,7 +15,7 @@
                 <div class="secondTape slide-in-right2s">
                   <div class="textInfo">
                     <span class="display-1 white--text">
-                      <b>Características</b>
+                      <b>{{text.title}}</b>
                     </span>
                   </div>
                 </div>
@@ -54,19 +54,20 @@
                       <div class="md-layout-item md-size-20">
                         <center>
                           <div class="divColored slide-in-bottom_1_d fade-in">
-                            <v-icon class="white--text" style="margin-top: 10px;">verified_user</v-icon>
+                            <v-icon
+                              class="white--text"
+                              style="margin-top: 10px;"
+                            >{{text.card_1.icon}}</v-icon>
                           </div>
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
                         <span class="title">
-                          <b>Work from anywhere on multiple devices</b>
+                          <b>{{text.card_1.title}}</b>
                         </span>
                         <br />
                         <br />
-                        <span
-                          class="body-1"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
+                        <span class="body-1">{{text.card_1.body}}</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -86,19 +87,20 @@
                       <div class="md-layout-item md-size-20">
                         <center>
                           <div class="divColored2 slide-in-bottom_2_d">
-                            <v-icon class="white--text" style="margin-top: 10px;">all_inbox</v-icon>
+                            <v-icon
+                              class="white--text"
+                              style="margin-top: 10px;"
+                            >{{text.card_2.icon}}</v-icon>
                           </div>
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
                         <span class="title">
-                          <b>Work from anywhere on multiple devices</b>
+                          <b>{{text.card_2.title}}</b>
                         </span>
                         <br />
                         <br />
-                        <span
-                          class="body-1"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
+                        <span class="body-1">{{text.card_2.body}}</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -124,19 +126,20 @@
                       <div class="md-layout-item md-size-20">
                         <center>
                           <div class="divColored3 slide-in-bottom_3_d">
-                            <v-icon class="white--text" style="margin-top: 10px;">offline_bolt</v-icon>
+                            <v-icon
+                              class="white--text"
+                              style="margin-top: 10px;"
+                            >{{text.card_3.icon}}</v-icon>
                           </div>
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
                         <span class="title">
-                          <b>Work from anywhere on multiple devices</b>
+                          <b>{{text.card_3.title}}</b>
                         </span>
                         <br />
                         <br />
-                        <span
-                          class="body-1"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
+                        <span class="body-1">{{text.card_3.body}}</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -156,19 +159,20 @@
                       <div class="md-layout-item md-size-20">
                         <center>
                           <div class="divColored4 slide-in-bottom_4_d">
-                            <v-icon class="white--text" style="margin-top: 10px;">shop_two</v-icon>
+                            <v-icon
+                              class="white--text"
+                              style="margin-top: 10px;"
+                            >{{text.card_4.icon}}</v-icon>
                           </div>
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
                         <span class="title">
-                          <b>Work from anywhere on multiple devices</b>
+                          <b>{{text.card_4.title}}</b>
                         </span>
                         <br />
                         <br />
-                        <span
-                          class="body-1"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
+                        <span class="body-1">{{text.card_4.body}}</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -189,19 +193,20 @@
                       <div class="md-layout-item md-size-20">
                         <center>
                           <div class="divColored5 slide-in-bottom_5_d">
-                            <v-icon class="white--text" style="margin-top: 10px;">person_pin</v-icon>
+                            <v-icon
+                              class="white--text"
+                              style="margin-top: 10px;"
+                            >{{text.card_5.icon}}</v-icon>
                           </div>
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
                         <span class="title">
-                          <b>Work from anywhere on multiple devices</b>
+                          <b>{{text.card_5.title}}</b>
                         </span>
                         <br />
                         <br />
-                        <span
-                          class="body-1"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident</span>
+                        <span class="body-1">{{text.card_5.body}}</span>
                       </div>
                     </div>
                   </v-card-text>
@@ -236,6 +241,10 @@
 
 <script>
 export default {
+  props: {
+    text: Object
+  },
+
   data() {
     return {};
   },
