@@ -34,14 +34,12 @@
         <v-layout style="margin-top: -5%;">
           <v-flex>
             <v-container>
-              <center v-for="i in rangeFor(30, 299)" :key="i">
+              <center>
                 <img
-                  v-if="current == i"
                   id="animationGift"
                   class="animationGift"
-                  :src="getImgSrc(i)"
+                  src="../../../../public/img/smart_budget.gif"
                   alt="animatedImg"
-                  @load="loadedFunc(i)"
                 />
               </center>
             </v-container>

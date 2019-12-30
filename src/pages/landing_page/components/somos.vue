@@ -2,122 +2,10 @@
   <div style="heigth: 100vh;">
     <v-container>
       <div class="principalContainer md-layout" style="heigth: 100vh !important;">
-        <div
-          class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-right text-right"
-        >
-          <v-card
-            class="mx-auto fade-in"
-            max-width="544"
-            style="margin-top: 25%; box-shadow: none; z-index:0 !important; margin-right: -10% !important;"
-          >
-            <v-card-text style="z-index:1000 !important;">
-              <span class="display-1 text--primary">
-                <b>Smart Budget</b>
-              </span>
-              <br />
-              <span class="title font-weight-light">
-                <b>
-                  Somos el software de control financiero más usado por la
-                  industria creativa.
-                </b>
-              </span>
-
-              <br />
-              <br />
-              <div class="body-2 font-weight-light">
-                Con unabase puedes proyectar los costos, saber cual es el valor
-                de tu proyecto, estar al tanto de los gastos reales, saber en
-                que lineas estuviste bien y en cuales no tanto. Nos preocupamos
-                de la visibilidad y utilidad de tu negocio.
-              </div>
-            </v-card-text>
-            <v-card-actions style="z-index:1000 !important; margin-top: -3%;">
-              <v-btn
-                dark
-                flat
-                class="black--text font-weight-black title"
-                style="cursor:pointer;z-index:1000 !important;"
-                tile
-                @click="goToDemo()"
-              >
-                <span class="text-none">Prueba el demo</span>
-                <v-icon center>keyboard_arrow_right</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </div>
-        <v-spacer></v-spacer>
-        <div
-          class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-left"
-          style="height: 100vh; padding: 0 !important;"
-        >
-          <div class="animatedContainer pull-left">
-            <center>
-              <v-container style="padding: 0 !important; margin:0 !important;">
-                <!--Barra izquierda width menos de lo normal alado de la normal (verde)-->
-                <div class="container7 slide-in-top">
-                  <div class="tape7"></div>
-                </div>
-
-                <!--Barra izquierda width normal alado de la super fina (amarilla)-->
-                <div class="container6 slide-in-top3">
-                  <div class="tape6"></div>
-                </div>
-
-                <!--Barra izquierda super fina alado de la ancha-->
-                <div class="container5 slide-in-top">
-                  <div class="tape5"></div>
-                </div>
-
-                <!--Barra izquierda ancha-->
-                <div class="container4 slide-in-top3">
-                  <div class="tape4"></div>
-                </div>
-
-                <!--barra verde-->
-                <div class="container1 slide-in-top">
-                  <div class="tape1"></div>
-                  <!--bolita verde-->
-                  <div class="container2">
-                    <div class="tape2"></div>
-                  </div>
-
-                  <!-- CONTANEDOR DE LA V DE UNABASE -->
-                  <div class="v-container-all">
-                    <!-- v de unabase lado derecho-->
-                    <div class="container-v slide-in-top">
-                      <div class="tape-v"></div>
-                    </div>
-
-                    <!-- v de unabase lado izquierdo-->
-                    <div class="container-v-i slide-in-top">
-                      <div class="tape-v-i"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--barra finita derecha-->
-                <div class="container3 slide-in-top2">
-                  <div class="tape3"></div>
-                </div>
-
-                <!--Barra derecha segunda derecha-->
-                <div class="container8 slide-in-top">
-                  <div class="tape8"></div>
-                </div>
-
-                <!--Barra derecha tercera derecha-->
-                <div class="container9 slide-in-top">
-                  <div class="tape9"></div>
-                </div>
-
-                <!--Barra derecha cuarta derecha-->
-                <div class="container10 slide-in-top2">
-                  <div class="tape10"></div>
-                </div>
-              </v-container>
-            </center>
-          </div>
+        <div class="md-layout-item md-size-100" style="padding:0;">
+          <somosMediumSmall class="medium_small" />
+          <somosMediumLarge class="medium_large" />
+          <somosExtraLarge class="extra_large" />
         </div>
       </div>
     </v-container>
@@ -125,12 +13,20 @@
 </template>
 
 <script>
+import somosMediumSmall from "../subcomponents/somos/somos_medium_small";
+import somosMediumLarge from "../subcomponents/somos/somos_medium_large";
+import somosExtraLarge from "../subcomponents/somos/somos_extra_large";
+
 export default {
   data() {
     return {};
   },
 
-  components: {},
+  components: {
+    somosMediumSmall,
+    somosMediumLarge,
+    somosExtraLarge
+  },
   methods: {
     goToDemo() {
       window.open("http://demo2017.unabase.cl/", "_blank");
@@ -569,6 +465,43 @@ export default {
 @media (max-width: 992px) {
   .animatedContainer {
     display: none !important;
+  }
+}
+
+/* =============================================== */
+/* MOSTRAR O OCULTAR DE ACUERDO A LA PANTALLA */
+/* =============================================== */
+
+/* LARGE TABLET TO LAPTOP  */
+.medium_small {
+  display: none;
+}
+
+@media (min-width: 960px) and (max-width: 1264px) {
+  .medium_small {
+    display: block !important;
+  }
+}
+
+/* DESKTOP  */
+.medium_large {
+  display: none;
+}
+
+@media (min-width: 1264px) and (max-width: 1904px) {
+  .medium_large {
+    display: block !important;
+  }
+}
+
+/* 4K ULTRA-WIDES  */
+.extra_large {
+  display: none;
+}
+
+@media (min-width: 1904px) {
+  .extra_large {
+    display: block !important;
   }
 }
 </style>
