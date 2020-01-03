@@ -25,9 +25,9 @@ export default {
       card: {
         title: "Smart Budget",
         subheader:
-          "Somos el software de control financiero más usado por la industria creativa.",
+          "Somos la app líder de la industria creativa basada 100% en el control de presupuestos y utilidades.",
         text:
-          "Con unabase puedes proyectar los costos, saber cual es el valor de tu proyecto, estar al tanto de los gastos reales, saber en que lineas estuviste bien y en cuales no tanto. Nos preocupamos de la visibilidad y utilidad de tu negocio.",
+          "En Unabase logramos lo que todos soñaban, una solución que a partir de una cotización conecta toda la cadena de producción, administración y control de una empresa. ",
         button: {
           text: "Prueba el demo",
           icon: "keyboard_arrow_right"

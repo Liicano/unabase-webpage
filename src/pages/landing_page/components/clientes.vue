@@ -205,7 +205,7 @@ export default {
 
   .usersCarousel {
     .v-carousel {
-      height: 90% !important;
+      height: 40% !important;
     }
     margin-top: 0 !important;
   }

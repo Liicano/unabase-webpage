@@ -10,10 +10,7 @@
               <div class="checkCircle slide-in-left"></div>
             </div>
 
-            <p
-              class="display-1 pull-left fade-in-fwd"
-              style="margin-top: 15px; margin-left: 10px;"
-            >
+            <p class="display-1 pull-left fade-in-fwd" style="margin-top: 15px; margin-left: 10px;">
               <center>
                 <b>{{ text.title }}</b>
               </center>
@@ -45,9 +42,7 @@
                     </span>
                     <br />
                     <span class="display-3 font-weight-black numbersColor">
-                      <animated-number
-                        :value="parseInt(text.mapCount[0].number)"
-                      ></animated-number>
+                      <animated-number :value="parseInt(text.mapCount[0].number)"></animated-number>
                     </span>
                   </center>
                 </div>
@@ -61,9 +56,7 @@
                     </span>
                     <br />
                     <span class="display-3 font-weight-black numbersColor">
-                      <animated-number
-                        :value="parseInt(text.mapCount[1].number)"
-                      ></animated-number>
+                      <animated-number :value="parseInt(text.mapCount[1].number)"></animated-number>
                     </span>
                   </center>
                 </div>
@@ -77,9 +70,7 @@
                     </span>
                     <br />
                     <span class="display-3 font-weight-black numbersColor">
-                      <animated-number
-                        :value="parseInt(text.mapCount[2].number)"
-                      ></animated-number>
+                      <animated-number :value="parseInt(text.mapCount[2].number)"></animated-number>
                     </span>
                   </center>
                 </div>
@@ -92,13 +83,17 @@
             style="margin-top: 4%"
           >
             <center>
-              <span class="headline font-weight-thin" style="color:black;">{{
+              <span class="headline font-weight-thin" style="color:black;">
+                {{
                 text.carrousel.title
-              }}</span>
+                }}
+              </span>
               <br />
-              <span class="display-1 font-weight-light" style="color:black;">{{
+              <span class="display-1 font-weight-light" style="color:black;">
+                {{
                 text.carrousel.body
-              }}</span>
+                }}
+              </span>
 
               <br />
               <div class="commentsCarousel">
@@ -109,18 +104,13 @@
                   show-arrows-on-hover
                   :interval="2000"
                 >
-                  <v-carousel-item
-                    v-for="(slide, i) in text.carrousel.items"
-                    :key="i"
-                  >
+                  <v-carousel-item v-for="(slide, i) in text.carrousel.items" :key="i">
                     <v-sheet color="white" height="100%">
                       <br />
                       <v-layout>
                         <v-flex>
                           <span>
-                            <div
-                              class="subtitle-1 black--text font-italic font-weight-light"
-                            >
+                            <div class="subtitle-1 black--text font-italic font-weight-light">
                               <b>"{{ slide.text }}"</b>
                             </div>
                           </span>
@@ -604,7 +594,7 @@ export default {
 
   .usersCarousel {
     .v-carousel {
-      height: 90% !important;
+      height: 40% !important;
     }
     margin-top: 0 !important;
   }

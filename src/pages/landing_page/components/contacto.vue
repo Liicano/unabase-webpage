@@ -13,9 +13,7 @@
         >
           <v-card-text>
             <center>
-              <span class="headline font-weight-regular pull-center text-center"
-                >Solicita Una Demo</span
-              >
+              <span class="headline font-weight-regular pull-center text-center">Solicita Una Demo</span>
             </center>
 
             <v-divider inset></v-divider>
@@ -23,50 +21,30 @@
 
             <v-layout style="padding-top: 10px;">
               <v-flex md12 xs12 sm12>
-                <v-text-field
-                  v-model="client.name"
-                  placeholder="Nombre"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.name" placeholder="Nombre" solo></v-text-field>
               </v-flex>
             </v-layout>
             <v-layout style="padding-top: 0; margin-top: 0;">
               <v-flex md12 xs12 sm12>
-                <v-text-field
-                  v-model="client.lastName"
-                  placeholder="Apellido"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.lastName" placeholder="Apellido" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md12 xs12 sm12>
-                <v-text-field
-                  v-model="client.business"
-                  placeholder="Empresa"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.business" placeholder="Empresa" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md12 xs12 sm12>
-                <v-text-field
-                  v-model="client.email"
-                  placeholder="Email"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.email" placeholder="Email" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md12 xs12 sm12>
-                <v-text-field
-                  v-model="client.phone"
-                  placeholder="Telefono"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.phone" placeholder="Telefono" solo></v-text-field>
               </v-flex>
             </v-layout>
             <v-layout>
@@ -78,8 +56,7 @@
                   block
                   large
                   @click="sendMail()"
-                  >Enviar</v-btn
-                >
+                >Enviar</v-btn>
               </v-flex>
             </v-layout>
           </v-card-text>
@@ -100,7 +77,7 @@
             <v-layout>
               <v-flex>
                 <center>
-                  <span class="headline text--primary ">
+                  <span class="headline text--primary">
                     <b>Contactanos</b>
                   </span>
                   <v-divider inset></v-divider>
@@ -114,7 +91,7 @@
                   >Hablemos y conoce nuestra soluciòn!</span
                 >
               </v-flex>
-            </v-layout> -->
+            </v-layout>-->
             <v-layout>
               <v-flex>
                 <v-layout>
@@ -125,8 +102,8 @@
                         <br />
 
                         <div class="subtitle-1 pull-left">
-                          +56 9 4810 6304 <br />
                           +56 9 4810 6304
+                          <br />+56 9 4810 6304
                         </div>
                       </v-flex>
                     </v-layout>
@@ -150,8 +127,8 @@
                         <div class="headline text-right">Chile</div>
                         <br />
                         <div class="subtitle-1 pull-right">
-                          +56 9 4810 6304 <br />
                           +56 9 4810 6304
+                          <br />+56 9 4810 6304
                         </div>
                       </v-flex>
                     </v-layout>
@@ -195,9 +172,7 @@
             <div class="display-1 pull-right">Chile</div>
             <br />
             <br />
-            <div class="subtitle-1 pull-right">
-              +56 9 4810 6304 / +56 9 4810 6304
-            </div>
+            <div class="subtitle-1 pull-right">+56 9 4810 6304 / +56 9 4810 6304</div>
 
             <br />
             <br />
@@ -225,56 +200,34 @@
           style="margin-top: 15%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text>
-            <span class="display-1 font-weight-regular pull-left"
-              >Solicita Una Demo</span
-            >
+            <span class="display-1 font-weight-regular pull-left">Solicita Una Demo</span>
             <v-spacer></v-spacer>
 
             <br />
             <br />
             <v-layout style="padding-top: 10px;">
               <v-flex md6 xs6 sm12>
-                <v-text-field
-                  v-model="client.name"
-                  placeholder="Nombre"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.name" placeholder="Nombre" solo></v-text-field>
               </v-flex>
 
               <v-flex md6 xs6 sm12 style="margin-left: 10px;">
-                <v-text-field
-                  v-model="client.lastName"
-                  placeholder="Apellido"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.lastName" placeholder="Apellido" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md6 xs6 sm12>
-                <v-text-field
-                  v-model="client.business"
-                  placeholder="Empresa"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.business" placeholder="Empresa" solo></v-text-field>
               </v-flex>
 
               <v-flex class="md6 xs6 sm12" style="margin-left: 10px;">
-                <v-text-field
-                  v-model="client.email"
-                  placeholder="Email"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.email" placeholder="Email" solo></v-text-field>
               </v-flex>
             </v-layout>
 
             <v-layout>
               <v-flex md6 xs6>
-                <v-text-field
-                  v-model="client.phone"
-                  placeholder="Telefono"
-                  solo
-                ></v-text-field>
+                <v-text-field v-model="client.phone" placeholder="Telefono" solo></v-text-field>
               </v-flex>
 
               <v-flex md6>
@@ -283,14 +236,7 @@
             </v-layout>
             <v-layout>
               <v-flex md6>
-                <v-btn
-                  color="#34cc02"
-                  class="white--text"
-                  dark
-                  large
-                  @click="sendMail()"
-                  >Enviar</v-btn
-                >
+                <v-btn color="#34cc02" class="white--text" dark large @click="sendMail()">Enviar</v-btn>
               </v-flex>
             </v-layout>
           </v-card-text>
@@ -308,9 +254,7 @@
           <v-card-text class="borderClass-right">
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div
-                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
-                >
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
                   <img
                     color="white"
                     class="svg-icon"
@@ -325,9 +269,7 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div
-                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
-                >
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
                   <img
                     class="svg-icon"
                     @click="goTo('youtube')"
@@ -341,9 +283,7 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div
-                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
-                >
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
                   <img
                     class="svg-icon"
                     @click="goTo('twitter')"
@@ -357,9 +297,7 @@
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">
-                <div
-                  style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;"
-                >
+                <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
                   <img
                     class="svg-icon"
                     @click="goTo('linkedin')"

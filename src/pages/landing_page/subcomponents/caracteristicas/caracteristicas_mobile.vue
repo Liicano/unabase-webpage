@@ -2,20 +2,14 @@
   <div style="heigth: 100vh;">
     <div style="display:contents;">
       <div class="md-layout">
-        <div
-          class="md-layout-item md-size-100"
-          style="padding:0;margin-top: 15%;"
-        >
+        <div class="md-layout-item md-size-100" style="padding:0;margin-top: 15%;">
           <center>
             <v-layout>
               <v-flex>
                 <v-card class="mx-auto slide-in-left_cat">
                   <v-card-text>
                     <p class="display-1 font-weight-thin">Características</p>
-                    <v-divider
-                      inset
-                      style="background: #34cc02 !important;"
-                    ></v-divider>
+                    <v-divider inset style="background: #34cc02 !important;"></v-divider>
 
                     <!-- <div
                       class="overline"
@@ -28,21 +22,14 @@
             <br />
             <v-layout align-content-center style="padding-top: 3%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
-                <v-card
-                  flat
-                  tile
-                  class="mx-auto slide-in-left_cat_2"
-                  max-width="100%"
-                >
-                  <v-layout
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
+                <v-card flat tile class="mx-auto slide-in-left_cat_2" max-width="100%">
+                  <v-layout class="fill-height ma-0" align="center" justify="center">
                     <div class="divColored1_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">{{
+                      <v-icon class="white--text" style="margin-top: 5px;">
+                        {{
                         text.card_1.icon
-                      }}</v-icon>
+                        }}
+                      </v-icon>
                     </div>
 
                     <center>
@@ -61,21 +48,14 @@
             <br />
             <v-layout align-content-center style="padding-top: 3%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
-                <v-card
-                  flat
-                  tile
-                  class="mx-auto slide-in-right_cat_1"
-                  max-width="100%"
-                >
-                  <v-layout
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
+                <v-card flat tile class="mx-auto slide-in-right_cat_1" max-width="100%">
+                  <v-layout class="fill-height ma-0" align="center" justify="center">
                     <div class="divColored2_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">{{
+                      <v-icon class="white--text" style="margin-top: 5px;">
+                        {{
                         text.card_2.icon
-                      }}</v-icon>
+                        }}
+                      </v-icon>
                     </div>
 
                     <center>
@@ -95,21 +75,14 @@
             <br />
             <v-layout align-content-center style="padding-top: 3%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
-                <v-card
-                  flat
-                  tile
-                  class="mx-auto slide-in-left_cat_3"
-                  max-width="100%"
-                >
-                  <v-layout
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
+                <v-card flat tile class="mx-auto slide-in-left_cat_3" max-width="100%">
+                  <v-layout class="fill-height ma-0" align="center" justify="center">
                     <div class="divColored3_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">{{
+                      <v-icon class="white--text" style="margin-top: 5px;">
+                        {{
                         text.card_3.icon
-                      }}</v-icon>
+                        }}
+                      </v-icon>
                     </div>
 
                     <center>
@@ -129,21 +102,14 @@
             <br />
             <v-layout align-content-center style="padding-top: 3%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
-                <v-card
-                  flat
-                  tile
-                  class="mx-auto slide-in-right_cat_1"
-                  max-width="100%"
-                >
-                  <v-layout
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
+                <v-card flat tile class="mx-auto slide-in-right_cat_1" max-width="100%">
+                  <v-layout class="fill-height ma-0" align="center" justify="center">
                     <div class="divColored4_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">{{
+                      <v-icon class="white--text" style="margin-top: 5px;">
+                        {{
                         text.card_4.icon
-                      }}</v-icon>
+                        }}
+                      </v-icon>
                     </div>
 
                     <center>
@@ -163,21 +129,14 @@
             <br />
             <v-layout align-content-center style="padding-top: 3%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
-                <v-card
-                  flat
-                  tile
-                  class="mx-auto slide-in-bottom_3_d"
-                  max-width="100%"
-                >
-                  <v-layout
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
+                <v-card flat tile class="mx-auto slide-in-bottom_3_d" max-width="100%">
+                  <v-layout class="fill-height ma-0" align="center" justify="center">
                     <div class="divColored5_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">{{
+                      <v-icon class="white--text" style="margin-top: 5px;">
+                        {{
                         text.card_5.icon
-                      }}</v-icon>
+                        }}
+                      </v-icon>
                     </div>
 
                     <center>

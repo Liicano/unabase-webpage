@@ -7,10 +7,7 @@
         <v-layout class="text-left" style="margin-top: 5% !important;">
           <v-flex class="text-left">
             <v-layout>
-              <v-flex
-                class="md2 xs2 sm2 text-center"
-                style="padding-top: 2.5%;"
-              >
+              <v-flex class="md2 xs2 sm2 text-center" style="padding-top: 2.5%;">
                 <center>
                   <div class="cilinder">
                     <div class="cilinder_ball"></div>
@@ -61,26 +58,18 @@
                   <strong>
                     <b>Visualizacion de todas tus lineas de proyectos</b>
                   </strong>
-                  <div class="caption">
-                    Todos tus gastos pasados y futuros en un solo lugar.
-                  </div>
+                  <div class="caption">Todos tus gastos pasados y futuros en un solo lugar.</div>
                 </v-flex>
               </v-layout>
             </v-timeline-item>
 
-            <v-timeline-item
-              color="teal lighten-3"
-              small
-              class="timeLineItem_2"
-            >
+            <v-timeline-item color="teal lighten-3" small class="timeLineItem_2">
               <v-layout class="pt-1">
                 <v-flex style="margin-top: 10%;">
                   <strong>
                     <b>Control de gastos y utilidades</b>
                   </strong>
-                  <div class="caption mb-2">
-                    Maneja tu dinero categorizando tus transacciones.
-                  </div>
+                  <div class="caption mb-2">Maneja tu dinero categorizando tus transacciones.</div>
                   <!-- <v-avatar>
                     <v-img
                       src="https://image.freepik.com/vector-gratis/diseno-fondo-ahorros_1270-10.jpg"
@@ -96,20 +85,15 @@
                   <strong>
                     <b>Crecimiento, futuro y proyección</b>
                   </strong>
-                  <div class="caption mb-2">
-                    Crece y alcanza tus metas a futuro.
-                  </div>
+                  <div class="caption mb-2">Crece y alcanza tus metas a futuro.</div>
                 </v-flex>
               </v-layout>
             </v-timeline-item>
 
             <!-- <v-timeline-item small color="white" class="logoUna">
-              <img
-                class="unaLogoTimeline"
-                src="../../../../public/img/logo_solo.png"
-                alt="unaLogo"
-              />
-            </v-timeline-item> -->
+             
+            </v-timeline-item>-->
+            <img class="unaLogoTimeline" src="../../../../public/img/logo_solo.png" alt="unaLogo" />
           </v-timeline>
         </v-container>
       </div>
@@ -275,6 +259,15 @@ export default {
   } */
 
   .unaLogoTimeline {
+    width: 55px !important;
+    height: 55px !important;
+    position: absolute;
+    bottom: -43%;
+    left: -1%;
+    -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .unaLogoTimeline_2 {
     margin-top: 4% !important;
     width: 55px !important;
     height: 55px !important;

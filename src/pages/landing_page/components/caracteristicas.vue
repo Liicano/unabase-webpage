@@ -3,18 +3,9 @@
     <div style="display:contents;">
       <div class="md-layout" style="padding:0;">
         <div class="md-layout-item md-size-100" style="padding:0;">
-          <caracteristicasMobile
-            :text="text"
-            class="mobile_cat"
-          ></caracteristicasMobile>
-          <caracteristicasMedium
-            :text="text"
-            class="medium_cat"
-          ></caracteristicasMedium>
-          <caracteristicasLarge
-            :text="text"
-            class="large_cat"
-          ></caracteristicasLarge>
+          <caracteristicasMobile :text="text" class="mobile_cat"></caracteristicasMobile>
+          <caracteristicasMedium :text="text" class="medium_cat"></caracteristicasMedium>
+          <caracteristicasLarge :text="text" class="large_cat"></caracteristicasLarge>
         </div>
       </div>
     </div>
@@ -31,34 +22,34 @@ export default {
       text: {
         title: "Características",
         card_1: {
-          title: "Work from anywhere on multiple devices",
-          icon: "offline_bolt",
+          title: "Todo parte de un presupuesto",
+          icon: "list",
           body:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident"
+            "Imaginas una solución donde todo parte de un presupuesto?, Compras, Facturas, Pagos, Resultados, todo nace desde ahí."
         },
         card_2: {
-          title: "Work from anywhere on multiple devices",
-          icon: "person_pin",
+          title: "Válida desde cualquier parte",
+          icon: "smartphone",
           body:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident"
+            "Puedes controlar tus negocios validando desde tu teléfono ingresos de gastos u órdenes de compra que excedan lo presupuestado."
         },
         card_3: {
-          title: "Work from anywhere on multiple devices",
-          icon: "dns",
+          title: "100% en tiempo real",
+          icon: "access_time",
           body:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident"
+            "No es necesario esperar informes basados en facturas para saber cómo va tu negocio, Unabase te lo informa día a día."
         },
         card_4: {
-          title: "Work from anywhere on multiple devices",
-          icon: "verified_user",
+          title: "Transversal",
+          icon: "timeline",
           body:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident"
+            "Ventas, Compras, Producción, Finanzas, Administración. Somos una solución 360° que conecta a toda tu organización."
         },
         card_5: {
-          title: "Work from anywhere on multiple devices",
-          icon: "check_circle",
+          title: "Maximiza la utilidad",
+          icon: "monetization_on",
           body:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi nostrum, provident"
+            "Presupuesta y proyecta ingresos, costos y gastos.  Utilidad proyectada versus real. Compara con lo que ocurrió realmente y cierra las compras de tus presupuestos para asegurar tu utilidad final."
         }
       }
     };

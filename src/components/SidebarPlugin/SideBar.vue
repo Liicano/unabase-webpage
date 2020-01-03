@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="md-layout-item md-size-80" style="z-index:100;">
+      <div class="md-layout-item md-size-80 sidebarLetters" style="z-index:100;">
         <md-list>
           <md-list-item
             style="cursor:pointer;"
@@ -482,6 +482,17 @@ span {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* MOBILE  */
+.sidebarLetters {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .sidebarLetters {
+    display: none;
   }
 }
 </style>
