@@ -38,28 +38,28 @@ export default {
           items: [
             {
               text:
-                "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri LA."
+                "Unabase nos ha ayudado a ordenar y manejar un gran número de proyectos en simultáneo, logrando tener claro las rentabilidades de cada uno. Además, nos permite cerrarlos y evaluar su rendimiento",
+              autor: "Felipe Díaz - Modo Santiago"
+            },
+            {
+              text:
+                'En "La Casa Films" y "Oriental Films", trabajamos hace 10 años con Unabase. En general, estoy buena parte de mi tiempo fuera del país y UnaBase funciona en perfectas condiciones en forma remota. Además, en caso de necesitarlos, su ayuda es inmediata y efectiva.',
+              autor: "Leopoldo Luisetti. - La Casa Films"
             },
             {
               text:
                 "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri LA. 2"
+              autor: "Andres Paucay - Shangri La."
             },
             {
               text:
-                "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri LA. 3"
+                "Unabase es un software muy intuitivo y de fácil uso que permite mantener un orden, eficiencia y claridad de los negocios desde el ámbito contable hasta el detalle de cada línea de trabajo. Además, cuenta con soporte online rápido y efectivo",
+              autor: "Mariano Fernández - Ludika"
             },
             {
               text:
-                "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri LA. 4"
-            },
-            {
-              text:
-                "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri LA. 5"
+                "Unabase nos ayuda a manejar nuestros presupuestos y costos de manera muy efectiva y certera. Los mecanismos de control de presupuestos y facilidad para generar y controlar gastos nos ayuda mucho en el manejo diario.",
+              autor: "Cristian Urzua - Grupo Sud"
             }
           ]
         }

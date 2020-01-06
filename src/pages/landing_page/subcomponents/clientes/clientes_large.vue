@@ -94,7 +94,7 @@
                   width="344"
                   hide-delimiter-background
                   show-arrows-on-hover
-                  :interval="2000"
+                  :interval="6000"
                 >
                   <v-carousel-item v-for="(slide, i) in text.carrousel.items" :key="i">
                     <v-sheet color="white" height="100%">
