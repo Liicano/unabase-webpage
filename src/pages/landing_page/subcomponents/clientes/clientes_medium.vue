@@ -20,62 +20,66 @@
         <br />
         <br />
 
-        <div class="md-layout">
+        <div class="md-layout" style=" opacity: 1 !important;">
           <div
-            class="md-layout-item md-size-30 md-medium-size-30 md-large-size-30 md-xlarge-size-40 fade-in-fwd mapImg"
+            class="md-layout-item md-size-30 md-medium-size-30 md-large-size-30 md-xlarge-size-40 mapImg"
+            style="z-index: 10000 !important; background: white !important; opacity: 1 !important;"
           >
-            <center>
-              <img src="../../../../../public/img/mapa.png" alt="map" />
+            <center style="z-index: 1000 !important; opacity: 1 !important;">
+              <img class="fade-in-fwd" src="../../../../../public/img/mapa.png" alt="map" />
             </center>
           </div>
           <div
             class="md-layout-item md-size-20 md-medium-size-20 md-large-size-20 md-xlarge-size-20 clientsCount"
+            style="z-index: 0 !important;"
           >
-            <center>
-              <br />
-              <br />
-              <div class="md-layout">
-                <div class="md-layout-item md-size-100 slide-in-left2">
-                  <center>
-                    <span class="title titleColor font-weight-black">
-                      <b>{{ text.mapCount[0].text }}</b>
-                    </span>
-                    <br />
-                    <span class="display-3 font-weight-black numbersColor">
-                      <animated-number :value="parseInt(text.mapCount[0].number)"></animated-number>
-                    </span>
-                  </center>
+            <div style="position: absolute !important;">
+              <center>
+                <br />
+                <br />
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-100">
+                    <center class="slide-in-left2">
+                      <span class="title titleColor font-weight-black">
+                        <b>{{ text.mapCount[0].text }}</b>
+                      </span>
+                      <br />
+                      <span class="display-3 font-weight-black numbersColor">
+                        <animated-number :value="parseInt(text.mapCount[0].number)"></animated-number>
+                      </span>
+                    </center>
+                  </div>
                 </div>
-              </div>
-              <br />
-              <div class="md-layout">
-                <div class="md-layout-item md-size-100 slide-in-left3">
-                  <center>
-                    <span class="title titleColor font-weight-black">
-                      <b>{{ text.mapCount[1].text }}</b>
-                    </span>
-                    <br />
-                    <span class="display-3 font-weight-black numbersColor">
-                      <animated-number :value="parseInt(text.mapCount[1].number)"></animated-number>
-                    </span>
-                  </center>
+                <br />
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-100">
+                    <center class="slide-in-left3">
+                      <span class="title titleColor font-weight-black">
+                        <b>{{ text.mapCount[1].text }}</b>
+                      </span>
+                      <br />
+                      <span class="display-3 font-weight-black numbersColor">
+                        <animated-number :value="parseInt(text.mapCount[1].number)"></animated-number>
+                      </span>
+                    </center>
+                  </div>
                 </div>
-              </div>
-              <br />
-              <div class="md-layout">
-                <div class="md-layout-item md-size-100 slide-in-left4">
-                  <center>
-                    <span class="title titleColor font-weight-black">
-                      <b>{{ text.mapCount[2].text }}</b>
-                    </span>
-                    <br />
-                    <span class="display-3 font-weight-black numbersColor">
-                      <animated-number :value="parseInt(text.mapCount[2].number)"></animated-number>
-                    </span>
-                  </center>
+                <br />
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-100">
+                    <center class="slide-in-left4">
+                      <span class="title titleColor font-weight-black">
+                        <b>{{ text.mapCount[2].text }}</b>
+                      </span>
+                      <br />
+                      <span class="display-3 font-weight-black numbersColor">
+                        <animated-number :value="parseInt(text.mapCount[2].number)"></animated-number>
+                      </span>
+                    </center>
+                  </div>
                 </div>
-              </div>
-            </center>
+              </center>
+            </div>
           </div>
 
           <div
@@ -556,7 +560,36 @@ export default {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
+    display: none !important;
   }
+
+  30% {
+    -webkit-transform: translateX(-700px);
+    transform: translateX(-700px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  50% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  70% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  90% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -568,7 +601,36 @@ export default {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
+    display: none !important;
   }
+
+  30% {
+    -webkit-transform: translateX(-700px);
+    transform: translateX(-700px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  50% {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  70% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+    display: none !important;
+  }
+
+  90% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -598,5 +660,10 @@ export default {
     }
     margin-top: 0 !important;
   }
+}
+
+img {
+  opacity: 1 !important;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 </style>

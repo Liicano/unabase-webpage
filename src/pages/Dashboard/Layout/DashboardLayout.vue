@@ -141,9 +141,15 @@ $scaleSize: 0.95;
   display: none;
 }
 
-.body {
+body {
+  font-size: 100%;
   font-family: Helvetica !important;
 }
+
+// html {
+//   font-size: 100%;
+//   font-family: Helvetica !important;
+// }
 
 .globalDiv {
 }

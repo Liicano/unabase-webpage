@@ -8,11 +8,10 @@
           <video
             width="100%"
             height="100%"
-            class="myVideo"
+            class="myVideo_desktop"
+            loop
             controls
             poster="../../../../public/img/video_placeholder_desktop.png"
-            preload="none"
-            onclick="this.play()"
           >
             <source src="../../../../public/video/presentation.webm" type="video/webm" />
           </video>
@@ -22,6 +21,7 @@
           <video
             width="400"
             controls
+            class="myVideo_mobile"
             poster="../../../../public/img/video_placeholder_mobile.png"
             preload="none"
             onclick="this.play()"
@@ -37,12 +37,21 @@
 <script>
 export default {
   data() {
-    return {};
+    return { isMobile: false };
   },
   components: {},
   methods: {},
-  created() {},
-  mounted() {}
+  created() {
+    this.isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  },
+  mounted() {
+    if (this.isMobile) {
+      console.log(document.getElementsByClassName("myVideo_mobile"));
+      document.getElementsByClassName("myVideo_mobile")[1].play();
+    } else {
+      document.getElementsByClassName("myVideo_desktop")[1].play();
+    }
+  }
 };
 </script>
 

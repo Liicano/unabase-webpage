@@ -11,7 +11,7 @@ export default {
     },
     duration: {
       type: Number,
-      default: 2000
+      default: 2500
     }
   },
   data() {

@@ -29,7 +29,7 @@ export default {
           },
           {
             text: "Usuarios",
-            number: "1250"
+            number: "2000"
           }
         ],
         carrousel: {

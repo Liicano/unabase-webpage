@@ -13,8 +13,8 @@
       :class="[(showFullLogo) ? 'logoContainerFullLogoClass' : 'logoContainerSoloClass']"
     >
       <div :class="['md-layout-item md-size-100']">
-        <div class="logotipe_una scale-in-center">
-          <img class="slide-in-left scale-in-center" src="../../../public/img/logo_unabase.png" />
+        <div class="logotipe_una">
+          <img class="slide-in-left slide-in-top" src="../../../public/img/logo_unabase.png" />
 
           <!-- <img
             class="slide-in-left scale-in-center"
@@ -51,53 +51,51 @@
             style="cursor:pointer;"
             v-scroll-to="'#somos'"
             @click="scrollToPoint('somosColor', 150, 0)"
-            class="slide-in-left"
           >
-            <a style="padding-left: 20px; z-index:100" href="#somos_2" class="md-body-1">SOMOS</a>
+            <a
+              style="padding-left: 20px; z-index:100"
+              href="#somos_2"
+              class="md-body-1 slide-in-left6"
+            >SOMOS</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#mira_el_video'"
             style="padding-top:7vh; cursor:pointer;"
-            class="slide-in-left"
             @click="scrollToPoint('mira_el_videoColor', 1750, 1)"
           >
             <a
               href="#mira_el_video_2"
               style="padding-left: 20px; z-index:100"
-              class="md-body-1"
+              class="md-body-1 slide-in-left5"
             >MIRA EL VIDEO</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#smart_budget'"
             style="padding-top:7vh; cursor:pointer;"
-            class="slide-in-left"
             @click="scrollToPoint('smart_budgetColor', 3300, 2)"
           >
-            <a style="padding-left: 20px;" class="md-body-1">SMART BUDGET</a>
+            <a style="padding-left: 20px;" class="md-body-1 slide-in-left4">SMART BUDGET</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#caracteristicas'"
             style="padding-top:7vh; cursor:pointer;"
-            class="slide-in-left"
             @click="scrollToPoint('caracteristicasColor', 4850, 3)"
           >
-            <a style="padding-left: 20px;" class="md-body-1">CARACTERISTICAS</a>
+            <a style="padding-left: 20px;" class="md-body-1 slide-in-left3">CARACTERISTICAS</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#clientes'"
             style="padding-top:7vh; cursor:pointer;"
-            class="slide-in-left"
             @click="scrollToPoint('clienteColor', 6450, 4)"
           >
-            <a style="padding-left: 20px;" class="md-body-1">CLIENTES</a>
+            <a style="padding-left: 20px;" class="md-body-1 slide-in-left2">CLIENTES</a>
           </md-list-item>
           <md-list-item
             v-scroll-to="'#contacto'"
             style="padding-top:7vh; cursor:pointer;"
-            class="slide-in-left"
             @click="scrollToPoint('contactColor', 8000, 5)"
           >
-            <a style="padding-left: 20px;" class="md-body-1">CONTACTO</a>
+            <a style="padding-left: 20px;" class="md-body-1 slide-in-left1">CONTACTO</a>
           </md-list-item>
         </md-list>
       </div>
@@ -338,9 +336,9 @@ span {
 /* ANIMACION DE ENTRADA DE SIDEBAR!!!! */
 
 .slide-in-bottom {
-  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -419,9 +417,37 @@ span {
   }
 }
 
-.slide-in-left {
+.slide-in-left1 {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left2 {
+  -webkit-animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left3 {
   -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left4 {
+  -webkit-animation: slide-in-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left5 {
+  -webkit-animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left6 {
+  -webkit-animation: slide-in-left 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .logoContainerSoloClass {
@@ -485,14 +511,61 @@ span {
   }
 }
 
+.slide-in-top {
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-1-5 19:41:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* MOBILE  */
 .sidebarLetters {
   display: block;
+  position: relative;
 }
 
 @media (max-width: 992px) {
   .sidebarLetters {
     display: none;
   }
+}
+
+.v-btn:before {
+  opacity: 0 !important;
 }
 </style>

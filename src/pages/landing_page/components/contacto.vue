@@ -102,15 +102,15 @@
                         <br />
 
                         <div class="subtitle-1 pull-left">
-                          +56 9 4810 6304
-                          <br />+56 9 4810 6304
+                          +51 959 619 835
+                          <br />
                         </div>
                       </v-flex>
                     </v-layout>
                     <v-layout>
                       <v-flex>
                         <div class="subheading font-weight-bold pull-left">
-                          <b>ventas@unabase.cl</b>
+                          <!-- <b>ventas@unabase.cl</b> -->
                         </div>
                       </v-flex>
                     </v-layout>
@@ -127,15 +127,15 @@
                         <div class="headline text-right">Chile</div>
                         <br />
                         <div class="subtitle-1 pull-right">
-                          +56 9 4810 6304
-                          <br />+56 9 4810 6304
+                          +56 2 504 0978
+                          <br />+56 9 5207 0907
                         </div>
                       </v-flex>
                     </v-layout>
                     <v-layout>
                       <v-flex>
                         <div class="subheading font-weight-bold pull-right">
-                          <b>ventas@unabase.cl</b>
+                          <b>ventas@unabase.com</b>
                         </div>
                       </v-flex>
                     </v-layout>
@@ -165,21 +165,21 @@
             <br />
             <br />
 
-            <span class="subheading">Hablemos y conoce nuestra soluciòn!</span>
+            <span class="subheading pull-right">Hablemos y conoce nuestra soluciòn!</span>
 
             <br />
             <br />
             <div class="display-1 pull-right">Chile</div>
             <br />
             <br />
-            <div class="subtitle-1 pull-right">+56 9 4810 6304 / +56 9 4810 6304</div>
+            <div class="subtitle-1 pull-right">+56 2 504 0978 / +56 9 5207 0907</div>
 
             <br />
             <br />
             <div class="display-1 pull-right">Perú</div>
             <br />
             <br />
-            <div class="subtitle-2 pull-right">+51 9 4810 6304</div>
+            <div class="subtitle-2 pull-right">+51 959 619 835</div>
 
             <br />
             <br />
@@ -281,7 +281,7 @@
               </v-flex>
             </v-layout>
             <br />
-            <v-layout>
+            <!-- <v-layout>
               <v-flex style="mouse: pointer !important;">
                 <div style="background: #d2d4dc; border-radius: 5px; width: 50px; padding: 10px;">
                   <img
@@ -293,7 +293,7 @@
                   />
                 </div>
               </v-flex>
-            </v-layout>
+            </v-layout>-->
             <br />
             <v-layout>
               <v-flex style="mouse: pointer !important;">

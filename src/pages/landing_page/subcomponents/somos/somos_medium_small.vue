@@ -33,7 +33,7 @@
                 @click="goToDemo()"
               >
                 <span class="text-none">{{text.button.text}}</span>
-                <v-icon center>{{text.button.icon}}</v-icon>
+                <v-icon id="icon" center>{{text.button.icon}}</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>

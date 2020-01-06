@@ -62,7 +62,7 @@
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
-                        <span class="title">
+                        <span class="title" style="color: black !important;">
                           <b>{{text.card_1.title}}</b>
                         </span>
                         <br />
@@ -95,7 +95,7 @@
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
-                        <span class="title">
+                        <span class="title" style="color: black !important;">
                           <b>{{text.card_2.title}}</b>
                         </span>
                         <br />
@@ -134,7 +134,7 @@
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
-                        <span class="title">
+                        <span class="title" style="color: black !important;">
                           <b>{{text.card_3.title}}</b>
                         </span>
                         <br />
@@ -167,7 +167,7 @@
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
-                        <span class="title">
+                        <span class="title" style="color: black !important;">
                           <b>{{text.card_4.title}}</b>
                         </span>
                         <br />
@@ -201,7 +201,7 @@
                         </center>
                       </div>
                       <div class="md-layout-item md-size-80">
-                        <span class="title">
+                        <span class="title" style="color: black !important;">
                           <b>{{text.card_5.title}}</b>
                         </span>
                         <br />
@@ -296,7 +296,7 @@ export default {
 .secondTape {
   margin: auto;
   height: 70px;
-  width: 1400px !important;
+  width: 1800px !important;
   opacity: none;
   border-radius: 50px;
   background: rgb(37, 125, 8);
