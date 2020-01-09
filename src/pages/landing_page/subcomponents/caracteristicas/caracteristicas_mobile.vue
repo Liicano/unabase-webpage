@@ -20,26 +20,33 @@
               </v-flex>
             </v-layout>
 
-            <v-layout align-content-center style="padding-top: 0%;">
+            <v-layout style="padding-top: 0%;">
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
                 <v-card flat tile class="mx-auto slide-in-left_cat_2" max-width="100%">
-                  <v-layout class="fill-height ma-0" align="center" justify="center">
-                    <div class="divColored1_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">
-                        {{
-                        text.card_1.icon
-                        }}
-                      </v-icon>
-                    </div>
+                  <v-layout class="fill-height ma-0" align="left" justify="left">
+                    <v-flex>
+                      <div class="divColored1_mobile">
+                        <v-icon class="white--text" style="margin-top: 5px;">
+                          {{
+                          text.card_1.icon
+                          }}
+                        </v-icon>
+                      </div>
+                    </v-flex>
 
-                    <span class="caption pull-left text-justify">
-                      <b
-                        class="text-left pull-left"
-                        style="margin-left: 6px;"
-                      >{{ text.card_1.title }}</b>
-                      <br />
-                      <span class="overline">{{ text.card_1.body }}</span>
-                    </span>
+                    <v-flex
+                      class="text-left pull-left text-sm-left caption"
+                      style="text-align: left;padding-left: 15px;"
+                    >
+                      <p
+                        class="overline text-left pull-left text-sm-left"
+                        style="    margin-bottom: 2px;"
+                      >
+                        <span class="font-weight-black">{{ text.card_1.title }}</span>
+                        <br />
+                        <span class="font-">{{ text.card_1.body }}</span>
+                      </p>
+                    </v-flex>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -49,22 +56,28 @@
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
                 <v-card flat tile class="mx-auto slide-in-right_cat_1" max-width="100%">
                   <v-layout class="fill-height ma-0" align="center" justify="center">
-                    <div class="divColored2_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">
-                        {{
-                        text.card_2.icon
-                        }}
-                      </v-icon>
-                    </div>
-
-                    <span class="caption pull-left text-justify">
-                      <b
-                        class="text-left pull-left"
-                        style="margin-left: 6px;"
-                      >{{ text.card_2.title }}</b>
-                      <br />
-                      <span class="overline">{{ text.card_2.body }}</span>
-                    </span>
+                    <v-flex>
+                      <div class="divColored2_mobile">
+                        <v-icon class="white--text" style="margin-top: 5px;">
+                          {{
+                          text.card_2.icon
+                          }}
+                        </v-icon>
+                      </div>
+                    </v-flex>
+                    <v-flex
+                      class="text-left pull-left text-sm-left caption"
+                      style="text-align: left;padding-left: 15px;"
+                    >
+                      <p
+                        class="overline text-left pull-left text-sm-left"
+                        style="    margin-bottom: 2px;"
+                      >
+                        <span class="font-weight-black">{{ text.card_2.title }}</span>
+                        <br />
+                        <span class="font-">{{ text.card_2.body }}</span>
+                      </p>
+                    </v-flex>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -75,22 +88,28 @@
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
                 <v-card flat tile class="mx-auto slide-in-left_cat_3" max-width="100%">
                   <v-layout class="fill-height ma-0" align="center" justify="center">
-                    <div class="divColored3_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">
-                        {{
-                        text.card_3.icon
-                        }}
-                      </v-icon>
-                    </div>
-
-                    <span class="caption pull-left text-justify">
-                      <b
-                        class="text-left pull-left"
-                        style="margin-left: 6px;"
-                      >{{ text.card_3.title }}</b>
-                      <br />
-                      <span class="overline">{{ text.card_3.body }}</span>
-                    </span>
+                    <v-flex>
+                      <div class="divColored3_mobile">
+                        <v-icon class="white--text" style="margin-top: 5px;">
+                          {{
+                          text.card_3.icon
+                          }}
+                        </v-icon>
+                      </div>
+                    </v-flex>
+                    <v-flex
+                      class="text-left pull-left text-sm-left caption"
+                      style="text-align: left;padding-left: 15px;"
+                    >
+                      <p
+                        class="overline text-left pull-left text-sm-left"
+                        style="    margin-bottom: 2px;"
+                      >
+                        <span class="font-weight-black">{{ text.card_3.title }}</span>
+                        <br />
+                        <span class="font-">{{ text.card_3.body }}</span>
+                      </p>
+                    </v-flex>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -101,22 +120,28 @@
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
                 <v-card flat tile class="mx-auto slide-in-right_cat_1" max-width="100%">
                   <v-layout class="fill-height ma-0" align="center" justify="center">
-                    <div class="divColored4_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">
-                        {{
-                        text.card_4.icon
-                        }}
-                      </v-icon>
-                    </div>
-
-                    <span class="caption pull-left text-justify">
-                      <b
-                        class="text-left pull-left"
-                        style="margin-left: 6px;"
-                      >{{ text.card_4.title }}</b>
-                      <br />
-                      <span class="overline">{{ text.card_4.body }}</span>
-                    </span>
+                    <v-flex>
+                      <div class="divColored4_mobile">
+                        <v-icon class="white--text" style="margin-top: 5px;">
+                          {{
+                          text.card_4.icon
+                          }}
+                        </v-icon>
+                      </div>
+                    </v-flex>
+                    <v-flex
+                      class="text-left pull-left text-sm-left caption"
+                      style="text-align: left;padding-left: 15px;"
+                    >
+                      <p
+                        class="overline text-left pull-left text-sm-left"
+                        style="    margin-bottom: 2px;"
+                      >
+                        <span class="font-weight-black">{{ text.card_4.title }}</span>
+                        <br />
+                        <span class="font-">{{ text.card_4.body }}</span>
+                      </p>
+                    </v-flex>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -127,22 +152,28 @@
               <v-flex class="slide-in-fwd-center_cat sm12 md12">
                 <v-card flat tile class="mx-auto slide-in-bottom_3_d" max-width="100%">
                   <v-layout class="fill-height ma-0" align="center" justify="center">
-                    <div class="divColored5_mobile">
-                      <v-icon class="white--text" style="margin-top: 5px;">
-                        {{
-                        text.card_5.icon
-                        }}
-                      </v-icon>
-                    </div>
-
-                    <span class="caption pull-left text-justify">
-                      <b
-                        class="text-left pull-left"
-                        style="margin-left: 6px;"
-                      >{{ text.card_5.title }}</b>
-                      <br />
-                      <span class="overline">{{ text.card_5.body }}</span>
-                    </span>
+                    <v-flex>
+                      <div class="divColored5_mobile">
+                        <v-icon class="white--text" style="margin-top: 5px;">
+                          {{
+                          text.card_5.icon
+                          }}
+                        </v-icon>
+                      </div>
+                    </v-flex>
+                    <v-flex
+                      class="text-left pull-left text-sm-left caption"
+                      style="text-align: left;padding-left: 15px;"
+                    >
+                      <p
+                        class="overline text-left pull-left text-sm-left"
+                        style="    margin-bottom: 2px;"
+                      >
+                        <span class="font-weight-black">{{ text.card_5.title }}</span>
+                        <br />
+                        <span class="font-">{{ text.card_5.body }}</span>
+                      </p>
+                    </v-flex>
                   </v-layout>
                 </v-card>
               </v-flex>
