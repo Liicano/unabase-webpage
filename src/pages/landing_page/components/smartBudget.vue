@@ -54,7 +54,7 @@
           <v-timeline align-top dense>
             <v-timeline-item color="pink" small class="timeLineItem_1">
               <v-layout class="pt-1">
-                <v-flex style="margin-top: 10%;">
+                <v-flex style="margin-top: 3%;">
                   <strong>
                     <b>Visualizacion de todas tus lineas de proyectos</b>
                   </strong>
@@ -65,7 +65,7 @@
 
             <v-timeline-item color="teal lighten-3" small class="timeLineItem_2">
               <v-layout class="pt-1">
-                <v-flex style="margin-top: 10%;">
+                <v-flex style="margin-top: 3%;">
                   <strong>
                     <b>Control de gastos y utilidades</b>
                   </strong>
@@ -81,7 +81,7 @@
 
             <v-timeline-item color="pink" small class="timeLineItem_3">
               <v-layout class="pt-1">
-                <v-flex style="margin-top: 10%;">
+                <v-flex style="margin-top: 3%;">
                   <strong>
                     <b>Crecimiento, futuro y proyección</b>
                   </strong>

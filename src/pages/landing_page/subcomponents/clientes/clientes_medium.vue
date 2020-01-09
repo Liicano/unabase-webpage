@@ -84,7 +84,7 @@
 
           <div
             class="md-layout-item md-size-40 md-small-size-100 md-medium-size-40 md-large-size-40 md-xlarge-size-40 fade-in-fwd commetsCard"
-            style="margin-top: 4%"
+            style="margin-top: 6%"
           >
             <center>
               <span class="headline font-weight-thin" style="color:black;">

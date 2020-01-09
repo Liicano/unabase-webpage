@@ -9,7 +9,7 @@
         <v-card
           class="mx-auto fade-in"
           max-width="100%"
-          style="margin-top: 0%; box-shadow: none; z-index:1000 !important;"
+          style="margin-top: 5%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text>
             <center>
@@ -127,7 +127,7 @@
                         <div class="headline text-right">Chile</div>
                         <br />
                         <div class="subtitle-1 pull-right">
-                          +56 2 504 0978
+                          +56 9 3101 5059
                           <br />+56 9 5207 0907
                         </div>
                       </v-flex>
@@ -172,7 +172,7 @@
             <div class="display-1 pull-right">Chile</div>
             <br />
             <br />
-            <div class="subtitle-1 pull-right">+56 2 504 0978 / +56 9 5207 0907</div>
+            <div class="subtitle-1 pull-right">+56 9 3101 5059 / +56 9 5207 0907</div>
 
             <br />
             <br />

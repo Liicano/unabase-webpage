@@ -32,15 +32,14 @@
                       </v-icon>
                     </div>
 
-                    <center>
-                      <span class="caption">
-                        <b>{{ text.card_1.title }}</b>
-                      </span>
+                    <span class="caption pull-left text-justify">
+                      <b
+                        class="text-left pull-left"
+                        style="margin-left: 6px;"
+                      >{{ text.card_1.title }}</b>
                       <br />
-                      <span class="overline">
-                        <b>{{ text.card_1.body }}</b>
-                      </span>
-                    </center>
+                      <span class="overline">{{ text.card_1.body }}</span>
+                    </span>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -58,15 +57,14 @@
                       </v-icon>
                     </div>
 
-                    <center>
-                      <span class="caption">
-                        <b>{{ text.card_2.title }}</b>
-                      </span>
+                    <span class="caption pull-left text-justify">
+                      <b
+                        class="text-left pull-left"
+                        style="margin-left: 6px;"
+                      >{{ text.card_2.title }}</b>
                       <br />
-                      <span class="overline">
-                        <b>{{ text.card_2.body }}</b>
-                      </span>
-                    </center>
+                      <span class="overline">{{ text.card_2.body }}</span>
+                    </span>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -85,15 +83,14 @@
                       </v-icon>
                     </div>
 
-                    <center>
-                      <span class="caption">
-                        <b>{{ text.card_3.title }}</b>
-                      </span>
+                    <span class="caption pull-left text-justify">
+                      <b
+                        class="text-left pull-left"
+                        style="margin-left: 6px;"
+                      >{{ text.card_3.title }}</b>
                       <br />
-                      <span class="overline">
-                        <b>{{ text.card_3.body }}</b>
-                      </span>
-                    </center>
+                      <span class="overline">{{ text.card_3.body }}</span>
+                    </span>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -112,15 +109,14 @@
                       </v-icon>
                     </div>
 
-                    <center>
-                      <span class="caption">
-                        <b>{{ text.card_4.title }}</b>
-                      </span>
+                    <span class="caption pull-left text-justify">
+                      <b
+                        class="text-left pull-left"
+                        style="margin-left: 6px;"
+                      >{{ text.card_4.title }}</b>
                       <br />
-                      <span class="overline">
-                        <b>{{ text.card_4.body }}</b>
-                      </span>
-                    </center>
+                      <span class="overline">{{ text.card_4.body }}</span>
+                    </span>
                   </v-layout>
                 </v-card>
               </v-flex>
@@ -139,15 +135,14 @@
                       </v-icon>
                     </div>
 
-                    <center>
-                      <span class="caption">
-                        <b>{{ text.card_5.title }}</b>
-                      </span>
+                    <span class="caption pull-left text-justify">
+                      <b
+                        class="text-left pull-left"
+                        style="margin-left: 6px;"
+                      >{{ text.card_5.title }}</b>
                       <br />
-                      <span class="overline">
-                        <b>{{ text.card_5.body }}</b>
-                      </span>
-                    </center>
+                      <span class="overline">{{ text.card_5.body }}</span>
+                    </span>
                   </v-layout>
                 </v-card>
               </v-flex>

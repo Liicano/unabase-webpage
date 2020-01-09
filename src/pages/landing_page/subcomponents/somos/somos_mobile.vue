@@ -4,12 +4,11 @@
       <div class="principalContainer md-layout" style="heigth: 100vh !important;">
         <div
           class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-right text-right"
-          style="margin-top: 80%"
         >
           <v-card
             class="mx-auto fade-in"
             max-width="844"
-            style="position: fixed !important; bottom: 55px !important; left: 0 !important; right: 0 !important;"
+            style="position: fixed !important; bottom: 15% !important; left: 0 !important; right: 0 !important;"
           >
             <v-card-text style="z-index:1000 !important;">
               <span class="title text--primary">
@@ -39,7 +38,7 @@
             </v-card-actions>
           </v-card>
         </div>
-        <v-spacer></v-spacer>
+
         <div
           class="md-layout-item md-medium-size-50 md-small-size-100 md-large-size-45 md-xlarge-size-50 pull-left"
           style="height: 100vh; padding: 0 !important;"
