@@ -13,8 +13,10 @@
     </side-bar>
 
     <!-- CONTENIDO -->
-
-    <div class="main-panel">
+    <div
+      class="main-panel"
+      :style="isMobile() ? 'width: 100% !important;' : 'width: 80% !important;'"
+    >
       <md-content @scroll.native="handleScroll($event)" style="z-index:1000;">
         <top-navbar></top-navbar>
         <div style="globalDiv">
@@ -57,10 +59,9 @@ import { ZoomCenterTransition } from "vue2-transitions";
 export default {
   components: {
     TopNavbar,
-    ContentFooter,
+
     MobileMenu,
-    FixedPlugin,
-    UserMenu,
+
     ZoomCenterTransition
   },
   data() {
@@ -74,8 +75,26 @@ export default {
   },
   methods: {
     handleScroll(e) {
-      console.log("aaaaaaaaaaa");
+      //console.log("aaaaaaaaaaa");
       // console.log(e);
+    },
+    isMobile() {
+      let isMobileVar = false;
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i) ||
+        navigator.userAgent.match(/mobile/i)
+      ) {
+        isMobileVar = true;
+      } else {
+        isMobileVar = false;
+      }
+      return isMobileVar;
     },
     toggleSidebar() {
       if (this.$sidebar.showSidebar) {

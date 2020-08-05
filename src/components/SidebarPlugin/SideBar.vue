@@ -1,7 +1,7 @@
 <template>
   <div
     class="sidebar"
-    style="box-shadow: none !important; background: white !important;"
+    style="box-shadow: none !important; background: white !important; width: 20% !important; z-index:1000 !important;"
     :data-color="activeColor"
     :data-image="backgroundImage"
     :data-background-color="backgroundColor"
@@ -14,19 +14,11 @@
     >
       <div :class="['md-layout-item md-size-100']">
         <div class="logotipe_una">
-          <img class="slide-in-left slide-in-top" src="../../../public/img/logo_unabase.png" />
-
-          <!-- <img
-            class="slide-in-left scale-in-center"
-            v-if="showFullLogo"
+          <img
+            style="width: 90%"
+            class="slide-in-left slide-in-top"
             src="../../../public/img/logo_unabase.png"
           />
-          <img
-            class="slide-in-left scale-in-center"
-            v-else
-            style="width: 40px;"
-            src="../../../public/img/logo_solo.png"
-          />-->
         </div>
       </div>
     </div>
@@ -34,14 +26,7 @@
     <div class="md-layout sidebarContainer" style="z-index: 1000 !important;">
       <div class="md-layout-item md-size-20" style="z-index: 1000 !important;">
         <div :class="['scrollbar scrollContainer slide-in-bottom', thumbColor]">
-          <div id="scrollDiv" class="force-overflow">
-            <div id="somos_2" style="height: 100vh !important;"></div>
-            <div id="mira_el_video_2" style="height: 100vh !important;"></div>
-            <div id="smart_budget" style="height: 100vh !important;"></div>
-            <div id="caracteristicas" style="height: 100vh !important;"></div>
-            <div id="clientes" style="height: 100vh !important;"></div>
-            <div id="contacto" style="height: 100vh !important;"></div>
-          </div>
+          <div id="scrollDiv" class="force-overflow"></div>
         </div>
       </div>
 
@@ -111,7 +96,6 @@
 <script>
 import welcome from "../../pages/landing_page/welcome";
 import { mapMutations, mapGetters } from "vuex";
-import { SlideYDownTransition } from "vue2-transitions";
 
 import $ from "jquery";
 export default {
@@ -197,10 +181,21 @@ export default {
       $(".scrollContainer").scrollTop(n);
     }
   },
+  mounted() {
+    $("div").on("mousewheel DOMMouseScroll drag touchstart", function(e) {
+      console.log("scroll");
+      e.preventDefault();
+    });
+
+    $("div").on("scroll", function(e) {
+      console.log("drag");
+      e.preventDefault();
+    });
+  },
   computed: {
     sidebarStyle() {
       return {
-        // backgroundImage: `url(${this.backgroundImage})`
+        //backgroundImage: `url(${this.backgroundImage})`
       };
     },
     ...mapGetters({

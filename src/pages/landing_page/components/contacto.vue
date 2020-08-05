@@ -13,7 +13,7 @@
         >
           <v-card-text>
             <center>
-              <span class="headline font-weight-regular pull-center text-center">Solicita Una Demo</span>
+              <span class="headline font-weight-regular pull-center text-center">Solicita una demo</span>
             </center>
 
             <v-divider inset></v-divider>
@@ -98,11 +98,20 @@
                   <v-flex>
                     <v-layout>
                       <v-flex>
-                        <div class="headline">Perú</div>
-                        <br />
+                        <div class="headline">Ventas perú</div>
 
                         <div class="subtitle-1 pull-left">
                           +51 959 619 835
+                          <br />
+                        </div>
+                      </v-flex>
+                    </v-layout>
+                    <v-layout>
+                      <v-flex>
+                        <div class="headline">Soporte</div>
+
+                        <div class="subtitle-1 pull-left">
+                          +56 9 5207 0908
                           <br />
                         </div>
                       </v-flex>
@@ -124,12 +133,9 @@
                   <v-flex>
                     <v-layout>
                       <v-flex>
-                        <div class="headline text-right">Chile</div>
+                        <div class="headline text-right">Ventas chile</div>
+                        <div class="subtitle-1 pull-right">+56 9 5207 0907</div>
                         <br />
-                        <div class="subtitle-1 pull-right">
-                          +56 9 3101 5059
-                          <br />+56 9 5207 0907
-                        </div>
                       </v-flex>
                     </v-layout>
                     <v-layout>
@@ -165,21 +171,27 @@
             <br />
             <br />
 
-            <span class="subheading pull-right">Hablemos y conoce nuestra soluciòn!</span>
+            <span class="subheading pull-right">Hablemos y conoce nuestra solución!</span>
 
             <br />
             <br />
-            <div class="display-1 pull-right">Chile</div>
+            <div class="display-1 pull-right">Ventas chile</div>
             <br />
             <br />
-            <div class="subtitle-1 pull-right">+56 9 3101 5059 / +56 9 5207 0907</div>
+            <div class="subtitle-1 pull-right">+56 9 5207 0907</div>
 
             <br />
             <br />
-            <div class="display-1 pull-right">Perú</div>
+            <div class="display-1 pull-right">Ventas perú</div>
             <br />
             <br />
-            <div class="subtitle-2 pull-right">+51 959 619 835</div>
+            <div class="subtitle-2 pull-right">+51 9 5961 9835</div>
+            <br />
+            <br />
+            <div class="display-1 pull-right">Soporte</div>
+            <br />
+            <br />
+            <div class="subtitle-2 pull-right">+56 9 5207 0908</div>
 
             <br />
             <br />
@@ -200,7 +212,7 @@
           style="margin-top: 15%; box-shadow: none; z-index:1000 !important;"
         >
           <v-card-text>
-            <span class="display-1 font-weight-regular pull-left">Solicita Una Demo</span>
+            <span class="display-1 font-weight-regular pull-left">Solicita una demo</span>
             <v-spacer></v-spacer>
 
             <br />

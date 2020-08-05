@@ -128,7 +128,7 @@ export default {
   components: {},
   methods: {
     goToDemo() {
-      window.open("http://demo2017.unabase.cl/", "_blank");
+      window.open("http://demo.unabase.cl/", "_blank");
     }
   },
   created() {},
@@ -141,7 +141,7 @@ export default {
 }
 
 .animatedContainer_mobile {
-  height: 100vh !important;
+  height: 75vh !important;
   width: 100% !important;
   padding-top: 10%;
   padding-left: 0;

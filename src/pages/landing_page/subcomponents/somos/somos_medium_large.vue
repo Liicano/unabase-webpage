@@ -129,7 +129,7 @@ export default {
   components: {},
   methods: {
     goToDemo() {
-      window.open("http://demo2017.unabase.cl/", "_blank");
+      window.open("http://demo.unabase.cl/", "_blank");
     }
   },
   created() {},

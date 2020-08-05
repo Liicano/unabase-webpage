@@ -25,10 +25,10 @@ export default {
           title: "Todo parte de un presupuesto",
           icon: "list",
           body:
-            "Imaginas una solución donde todo parte de un presupuesto?, Compras, Facturas, Pagos, Resultados, todo nace desde ahí."
+            "¿Imaginas una solución donde todo parte de un presupuesto? Compras, facturas, pagos y resultados. Todo nace desde ahí."
         },
         card_2: {
-          title: "Válida desde cualquier parte",
+          title: "Valida desde cualquier parte",
           icon: "smartphone",
           body:
             "Puedes controlar tus negocios validando desde tu teléfono ingresos de gastos u órdenes de compra que excedan lo presupuestado."
@@ -43,7 +43,7 @@ export default {
           title: "Transversal",
           icon: "timeline",
           body:
-            "Ventas, Compras, Producción, Finanzas, Administración. Somos una solución 360° que conecta a toda tu organización."
+            "Ventas, compras, producción, finanzas y administración. Somos una solución 360° que conecta a toda tu organización."
         },
         card_5: {
           title: "Maximiza la utilidad",

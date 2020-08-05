@@ -135,7 +135,7 @@
                     >
                       <p
                         class="overline text-left pull-left text-sm-left"
-                        style="    margin-bottom: 2px;"
+                        style="margin-bottom: 2px;"
                       >
                         <span class="font-weight-black">{{ text.card_4.title }}</span>
                         <br />

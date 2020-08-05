@@ -1,7 +1,7 @@
 <template>
   <div style="heigth: 100vh;">
     <div class="md-layout">
-      <div class="md-layout-item md-size-100">
+      <div class="md-layout-item md-size-100" style="padding:0;">
         <clientesLarge :text="text" class="large"></clientesLarge>
         <clientesMedium :text="text" class="medium"></clientesMedium>
       </div>
@@ -43,13 +43,13 @@ export default {
             },
             {
               text:
-                'En "La Casa Films" y "Oriental Films", trabajamos hace 10 años con Unabase. En general, estoy buena parte de mi tiempo fuera del país y UnaBase funciona en perfectas condiciones en forma remota. Además, en caso de necesitarlos, su ayuda es inmediata y efectiva.',
+                "En La Casa Films y Oriental Films, trabajamos hace 10 años con Unabase. En general, estoy buena parte de mi tiempo fuera del país y unabase funciona en perfectas condiciones en forma remota. Además, en caso de necesitarlos, su ayuda es inmediata y efectiva.",
               autor: "Leopoldo Luisetti. - La Casa Films"
             },
             {
               text:
                 "Unabase nos ha ayudado a generar mecanismos de normalización de precios y costos. Permitiendo modernizar y transparentar la comunicación comercial con nuestros clientes",
-              autor: "Andres Paucay - Shangri La."
+              autor: "Andres Paucay - Shangri La"
             },
             {
               text:

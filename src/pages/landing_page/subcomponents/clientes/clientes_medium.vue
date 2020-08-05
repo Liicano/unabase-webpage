@@ -1,7 +1,7 @@
 <template>
   <div style="heigth: 100vh;">
     <div class="md-layout">
-      <div class="md-layout-item md-size-100">
+      <div class="md-layout-item md-size-100" style="padding:0;">
         <br />
         <br />
         <div class="md-layout switchClientes">
@@ -23,7 +23,7 @@
         <div class="md-layout" style=" opacity: 1 !important;">
           <div
             class="md-layout-item md-size-30 md-medium-size-30 md-large-size-30 md-xlarge-size-40 mapImg"
-            style="z-index: 10000 !important; background: white !important; opacity: 1 !important;"
+            style="z-index: 10000 !important; background: white !important; opacity: 1 !important; height: 100% !important; padding:0;"
           >
             <center style="z-index: 1000 !important; opacity: 1 !important;">
               <img class="fade-in-fwd" src="../../../../../public/img/mapa.png" alt="map" />
@@ -33,7 +33,7 @@
             class="md-layout-item md-size-20 md-medium-size-20 md-large-size-20 md-xlarge-size-20 clientsCount"
             style="z-index: 0 !important;"
           >
-            <div style="position: absolute !important;">
+            <div style="position: absolute !important; z-index: 0;">
               <center>
                 <br />
                 <br />
@@ -133,18 +133,20 @@
           </div>
         </div>
 
-        <div class="md-layout">
+        <div class="md-layout" style="margin-top: -5% !important">
           <div
             class="md-layout-item md-size-100 md-medium-size-100 md-large-size-100 md-xlarge-size-100 slide-in-left3 usersCarousel"
           >
             <v-carousel
-              height="100%"
+              :height="isMobile() ? '50%' : '100%'"
               width="100%"
               :hide-delimiters="true"
               :hide-delimiter-background="true"
               :interval="4500"
               class="userCarouselClass"
             >
+
+
               <v-carousel-item>
                 <v-sheet color="white" height="100%">
                   <!-- DIV (PRIMEROS 10) -->
@@ -366,6 +368,64 @@
                   </div>
                 </v-sheet>
               </v-carousel-item>
+
+              <v-carousel-item>
+                <v-sheet color="white" height="100%">
+                  <!-- DIV (CUARTOS 10) -->
+                  <div>
+                    <v-layout>
+                      <v-flex>
+                        <center>
+                          <img
+                            src="../../../../../public/img/logos/alaska.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cimarron.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cinemagica.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cuborojo.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/invercine.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/touch.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/glovox-min.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/goodsheep-min.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/gyt-min.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/ig-min.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+                        </center>
+                      </v-flex>
+                    </v-layout>
+                  </div>
+                </v-sheet>
+              </v-carousel-item>
             </v-carousel>
           </div>
         </div>
@@ -389,9 +449,30 @@ export default {
   components: {
     AnimatedNumber
   },
-  methods: {},
+  methods: {
+    isMobile() {
+      let isMobileVar = false;
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i) ||
+        navigator.userAgent.match(/mobile/i)
+      ) {
+        isMobileVar = true;
+      } else {
+        isMobileVar = false;
+      }
+      return isMobileVar;
+    }
+  },
   created() {},
-  mounted() {}
+  mounted() {
+    console.log(this.isMobile());
+  }
 };
 </script>
 
@@ -639,7 +720,7 @@ export default {
 }
 
 .usersCarousel {
-  margin-top: -7%;
+  margin-top: -9%;
 }
 
 @media (max-width: 992px) {

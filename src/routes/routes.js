@@ -2,7 +2,7 @@ import DashboardLayout from "@/pages/Dashboard/Layout/DashboardLayout.vue";
 import AuthLayout from "@/pages/Dashboard/Pages/AuthLayout.vue";
 
 // Dashboard pages
-import Dashboard from "@/pages/Dashboard/Dashboard.vue";
+// import Dashboard from "@/pages/Dashboard/Dashboard.vue";
 
 // Pages
 import User from "@/pages/Dashboard/Pages/UserProfile.vue";
@@ -22,11 +22,7 @@ import Notifications from "@/pages/Dashboard/Components/Notifications.vue";
 import Icons from "@/pages/Dashboard/Components/Icons.vue";
 import Typography from "@/pages/Dashboard/Components/Typography.vue";
 
-// Forms pages
-import RegularForms from "@/pages/Dashboard/Forms/RegularForms.vue";
-import ExtendedForms from "@/pages/Dashboard/Forms/ExtendedForms.vue";
-import ValidationForms from "@/pages/Dashboard/Forms/ValidationForms.vue";
-import Wizard from "@/pages/Dashboard/Forms/Wizard.vue";
+
 
 // TableList pages
 import RegularTables from "@/pages/Dashboard/Tables/RegularTables.vue";
@@ -38,11 +34,8 @@ import GoogleMaps from "@/pages/Dashboard/Maps/GoogleMaps.vue";
 import FullScreenMap from "@/pages/Dashboard/Maps/FullScreenMap.vue";
 import VectorMaps from "@/pages/Dashboard/Maps/VectorMaps.vue";
 
-// Calendar
-import Calendar from "@/pages/Dashboard/Calendar.vue";
-// Charts
-import Charts from "@/pages/Dashboard/Charts.vue";
-import Widgets from "@/pages/Dashboard/Widgets.vue";
+
+
 
 import Home from "../pages/landing_page/welcome.vue";
 
@@ -51,93 +44,118 @@ let componentsMenu = {
   component: DashboardLayout,
   redirect: "/components/buttons",
   name: "Components",
-  children: [
-    {
+  children: [{
       path: "buttons",
       name: "Buttons",
-      components: { default: Buttons }
+      components: {
+        default: Buttons
+      }
     },
     {
       path: "grid-system",
       name: "Grid System",
-      components: { default: GridSystem }
+      components: {
+        default: GridSystem
+      }
     },
     {
       path: "panels",
       name: "Panels",
-      components: { default: Panels }
+      components: {
+        default: Panels
+      }
     },
     {
       path: "sweet-alert",
       name: "Sweet Alert",
-      components: { default: SweetAlert }
+      components: {
+        default: SweetAlert
+      }
     },
     {
       path: "notifications",
       name: "Notifications",
-      components: { default: Notifications }
+      components: {
+        default: Notifications
+      }
     },
     {
       path: "icons",
       name: "Icons",
-      components: { default: Icons }
+      components: {
+        default: Icons
+      }
     },
     {
       path: "typography",
       name: "Typography",
-      components: { default: Typography }
+      components: {
+        default: Typography
+      }
     }
   ]
 };
-let formsMenu = {
-  path: "/forms",
-  component: DashboardLayout,
-  redirect: "/forms/regular",
-  name: "Forms",
-  children: [
-    {
-      path: "regular",
-      name: "Regular Forms",
-      components: { default: RegularForms }
-    },
-    {
-      path: "extended",
-      name: "Extended Forms",
-      components: { default: ExtendedForms }
-    },
-    {
-      path: "validation",
-      name: "Validation Forms",
-      components: { default: ValidationForms }
-    },
-    {
-      path: "wizard",
-      name: "Wizard",
-      components: { default: Wizard }
-    }
-  ]
-};
+// let formsMenu = {
+//   path: "/forms",
+//   component: DashboardLayout,
+//   redirect: "/forms/regular",
+//   name: "Forms",
+//   children: [{
+//       path: "regular",
+//       name: "Regular Forms",
+//       components: {
+//         default: RegularForms
+//       }
+//     },
+//     {
+//       path: "extended",
+//       name: "Extended Forms",
+//       components: {
+//         default: ExtendedForms
+//       }
+//     },
+//     {
+//       path: "validation",
+//       name: "Validation Forms",
+//       components: {
+//         default: ValidationForms
+//       }
+//     },
+//     {
+//       path: "wizard",
+//       name: "Wizard",
+//       components: {
+//         default: Wizard
+//       }
+//     }
+//   ]
+// };
 
 let tablesMenu = {
   path: "/table-list",
   component: DashboardLayout,
   redirect: "/table-list/regular",
   name: "Tables",
-  children: [
-    {
+  children: [{
       path: "regular",
       name: "Regular Tables",
-      components: { default: RegularTables }
+      components: {
+        default: RegularTables
+      }
     },
     {
       path: "extended",
       name: "Extended Tables",
-      components: { default: ExtendedTables }
+      components: {
+        default: ExtendedTables
+      }
     },
     {
       path: "paginated",
       name: "Pagianted Tables",
-      components: { default: PaginatedTables }
+      components: {
+        default: PaginatedTables
+      }
     }
   ]
 };
@@ -147,11 +165,12 @@ let mapsMenu = {
   component: DashboardLayout,
   name: "Maps",
   redirect: "/maps/google",
-  children: [
-    {
+  children: [{
       path: "google",
       name: "Google Maps",
-      components: { default: GoogleMaps }
+      components: {
+        default: GoogleMaps
+      }
     },
     {
       path: "full-screen",
@@ -161,12 +180,16 @@ let mapsMenu = {
         hideFooter: true,
         navbarAbsolute: true
       },
-      components: { default: FullScreenMap }
+      components: {
+        default: FullScreenMap
+      }
     },
     {
       path: "vector-map",
       name: "Vector Map",
-      components: { default: VectorMaps }
+      components: {
+        default: VectorMaps
+      }
     }
   ]
 };
@@ -176,16 +199,19 @@ let pagesMenu = {
   component: DashboardLayout,
   name: "Pages",
   redirect: "/pages/user",
-  children: [
-    {
+  children: [{
       path: "user",
       name: "User Page",
-      components: { default: User }
+      components: {
+        default: User
+      }
     },
     {
       path: "timeline",
       name: "Timeline Page",
-      components: { default: TimeLine }
+      components: {
+        default: TimeLine
+      }
     },
     {
       path: "rtl",
@@ -193,7 +219,9 @@ let pagesMenu = {
       meta: {
         rtlActive: true
       },
-      components: { default: RtlSupport }
+      components: {
+        default: RtlSupport
+      }
     }
   ]
 };
@@ -202,8 +230,7 @@ let authPages = {
   path: "/",
   component: AuthLayout,
   name: "Authentication",
-  children: [
-    {
+  children: [{
       path: "/login",
       name: "Login",
       component: Login
@@ -226,14 +253,13 @@ let authPages = {
   ]
 };
 
-const routes = [
-  {
+const routes = [{
     path: "/",
     redirect: "/home",
     name: "Home"
   },
   componentsMenu,
-  formsMenu,
+
   tablesMenu,
   mapsMenu,
   pagesMenu,
@@ -241,13 +267,13 @@ const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    children: [
-      {
-        path: "home",
-        name: "Home",
-        components: { default: Home }
+    children: [{
+      path: "home",
+      name: "Home",
+      components: {
+        default: Home
       }
-    ]
+    }]
   }
 ];
 

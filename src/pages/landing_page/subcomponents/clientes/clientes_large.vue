@@ -90,7 +90,7 @@
               <br />
               <div class="commentsCarousel">
                 <v-carousel
-                  height="250"
+                  height="300"
                   width="344"
                   hide-delimiter-background
                   show-arrows-on-hover
@@ -347,6 +347,65 @@
                           <img
                             src="../../../../../public/img/logos/welove-min.jpg"
                             class="grey lighten-2 imgClass_large"
+                          />
+                        </center>
+                      </v-flex>
+                    </v-layout>
+                  </div>
+                </v-sheet>
+              </v-carousel-item>
+
+
+                 <v-carousel-item>
+                <v-sheet color="white" height="100%">
+                  <!-- DIV (CUARTOS 10) -->
+                  <div>
+                    <v-layout>
+                      <v-flex>
+                        <center>
+                          <img
+                            src="../../../../../public/img/logos/alaska.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cimarron.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cinemagica.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/cuborojo.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/invercine.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+                          <img
+                            src="../../../../../public/img/logos/touch.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/glovox-min.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/goodsheep-min.jpg"
+                            class="grey lighten-2 imgClass_large"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/gyt-min.jpg"
+                            class="grey lighten-2 imgClass"
+                          />
+
+                          <img
+                            src="../../../../../public/img/logos/ig-min.jpg"
+                            class="grey lighten-2 imgClass"
                           />
                         </center>
                       </v-flex>

@@ -4,30 +4,24 @@
       <h3 class="title">World Map</h3>
       <p class="category">
         Looks great on any resolution. Made by our friends from
-        <a href="https://jvectormap.com/" target="_blank">jVector Map</a>.
+        <a
+          href="https://jvectormap.com/"
+          target="_blank"
+        >jVector Map</a>.
       </p>
     </div>
     <div class="md-layout">
       <div class="md-layout-item md-size-100">
         <md-card class="md-card-plain">
-          <md-card-content>
-            <async-world-map
-              class="map map-big"
-              :data="mapData"
-            ></async-world-map>
-          </md-card-content>
+          <md-card-content></md-card-content>
         </md-card>
       </div>
     </div>
   </div>
 </template>
 <script>
-import AsyncWorldMap from "@/components/WorldMap/AsyncWorldMap.vue";
-
 export default {
-  components: {
-    AsyncWorldMap
-  },
+  components: {},
   data() {
     return {
       mapData: {
